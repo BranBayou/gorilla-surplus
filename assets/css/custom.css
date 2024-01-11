@@ -1,0 +1,51 @@
+/*Button custome color*/
+
+.btn-color-default {
+  background-color: #E8E8E8;
+}
+
+.btn-color-hover {
+  background-color: #383634;
+}
+
+.btn-color-active {
+  background-color: #B99E80;
+}
+
+.btn-color-disabled {
+  background-color: #8C8C8C;
+}
+
+/* Input type custome css */
+
+.input-color-default {
+  border: 1px solid #383634;
+  background-color: #f2f0ea;
+  border-radius: 5px;
+}
+
+.input-color-hover:hover {
+  border: 1px solid #8C8C8C;
+  background-color: fff;
+  border-radius: 5px;
+}
+
+.input-color-active:active {
+  border: 1px solid #383634;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.input-color-success:success {
+  border: 1px solid #8BB980;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.input-color-error:error {
+  border: 1px solid #B98080;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+/**/
