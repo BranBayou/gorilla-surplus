@@ -1,18 +1,19 @@
 /*Button custome color*/
 
-.btn-color-default {
+button:default {
   background-color: #E8E8E8;
 }
 
-.btn-color-hover {
+button:hover{
   background-color: #383634;
+  color: #fff;
 }
 
-.btn-color-active {
+button:active {
   background-color: #B99E80;
 }
 
-.btn-color-disabled {
+.button:disabled {
   background-color: #8C8C8C;
 }
 
@@ -48,4 +49,19 @@
   border-radius: 5px;
 }
 
-/**/
+/* Custom width */
+
+.inner-screen {
+  width: 95.5%;
+}
+
+/* Custom hight */
+.header-icons-hight {
+  height: 70px;
+}
+
+/* font color */
+
+.white {
+  color: #fff;
+}

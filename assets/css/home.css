@@ -1,0 +1,120 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F2F0EA;
+}
+
+/* Globals styles */
+
+ul li {
+  list-style-type: none;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+/* Header section */
+
+header {
+  padding: 16px 0 0 0;
+}
+
+.logo {
+  width: 112px;
+  border-radius: 16px;
+}
+
+.catalog {
+  width: 104px;
+  border-radius: 16px;
+  background: 2px solid #383634;
+}
+
+.search-box {
+  width: 259px;
+  border-radius: 16px;
+  border: 2px solid #383634;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.search-box input {
+  flex: 1;
+  width: 90%;
+  height: 65px;
+  background-color: #F2F0EA;
+  border: none;
+  outline: none;
+}
+
+.nav li a {
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #383634;
+}
+
+.currency,
+.user,
+.cart {
+  width: 78px;
+  border-radius: 16px;
+  background: 2px solid #383634;
+}
+
+.currency select {
+  outline: none;
+  border: none;
+}
+
+/* Main section style */
+
+.main-section {
+  position: relative;
+  margin-top: 10px;
+}
+
+.main-section img {
+  width: 100%;
+}
+
+.main-section .intro {
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+}
+
+.intro h1 {
+  width: 50%;
+  font-family: Oswald;
+  font-size: 54px;
+  font-weight: 500;
+  line-height: 59px;
+  color: #fff;
+}
+
+.intro p {
+  width: 50%;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #fff;
+}
+
+.learn button {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 253px;
+  border-radius: 16px;
+  border: 1px solid #383634
+}
+
