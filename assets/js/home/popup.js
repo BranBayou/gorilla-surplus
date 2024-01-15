@@ -43,42 +43,17 @@ function hidePopup() {
 
 /* Catalog sub popup for every button hover */
 
-const gunsRiflesBtn = document.getElementById('guns-and-rifles-btn');
+const subPopupBtns = document.querySelectorAll('.popup-button');
+const bottomSections = document.querySelectorAll('.bottom-section');
 
-const gunsRiflesList = document.getElementById('guns-and-rifles');
+subPopupBtns.forEach((button, index) => {
+  button.addEventListener('mouseover', () => {
+    // Hide all bottom sections
+    bottomSections.forEach(section => {
+      section.classList.add('d-none');
+    });
 
-let isMouseOverSubButton = false;
-let isMouseOverSubPopup = false;
-
-gunsRiflesBtn.addEventListener('mouseover', () => {
-  isMouseOverSubButton = true;
-  showGunsPopup();
+    // Show the corresponding bottom section based on the button's index
+    bottomSections[index].classList.remove('d-none');
+  });
 });
-
-gunsRiflesBtn.addEventListener('mouseout', () => {
-  isMouseOverSubButton = false;
-  hideGunsPopup();
-});
-
-gunsRiflesList.addEventListener('mouseenter', () => {
-  isMouseOverSubPopup = true;
-  showGunsPopup();
-});
-
-gunsRiflesList.addEventListener('mouseleave', () => {
-  isMouseOverSubPopup = false;
-  hideGunsPopup();
-});
-
-function showGunsPopup() {
-  if (isMouseOverSubButton || isMouseOverSubPopup) {
-    gunsRiflesList.classList.remove('d-none');
-    overlay.classList.remove('d-none');
-  }
-}
-function hideGunsPopup() {
-  if (!isMouseOverSubButton && !isMouseOverSubPopup) {
-    gunsRiflesList.classList.add('d-none');
-    overlay.classList.add('d-none');
-  }
-}
