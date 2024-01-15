@@ -15,57 +15,48 @@
   <header class="inner-screen mx-auto d-flex justify-content-between align-items-center">
     <div class="left-section d-flex gap-2">
       <a href="index.html"><img class="bg-dark logo header-icons-hight" src="./assets/icons/logo.png" alt="logo"></a>
-      <button class="catalog header-icons-hight">Catalog</button>
-      <span class="search-box header-icons-hight">
+      <button class="cart header-icons-hight d-lg-none"><img src="/assets/icons/fi-rr-shopping-cart.png" alt=""></button>
+      <button class="catalog header-icons-hight d-none d-lg-block">Catalog</button>
+      <div class="search-box header-icons-hight d-none d-lg-flex">
         <input class="search" type="search" placeholder="Search">
         <img src="/assets/icons/fi-br-search.png" alt="">
-      </span>
+      </div>
     </div>
-    <div class="center-section">
-      <ul class="nav gap-5">
+    <div class="center-section d-none d-lg-block">
+      <ul class="nav d-flex justify-content-center align-items-center gap-lg-2 gap-xl-5">
         <li><a href="#">About us</a></li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </div>
-    <div class="right-section">
-      <button class="currency header-icons-hight"><select id="currency-type header-icons-hight">
+    <div class="right-section d-flex justify-content-end gap-2">
+      <button class="currency header-icons-hight d-none d-lg-block"><select id="currency-type header-icons-hight">
         <option value="usd">USD</option>
         <option value="euro">CAD</option>
       </select></button>
-      <button class="user header-icons-hight"><img src="/assets/icons/fi-rr-user.png" alt=""></button>
-      <button class="cart header-icons-hight"><img src="/assets/icons/fi-rr-shopping-cart.png" alt=""></button>
+      <button class="user header-icons-hight d-none d-lg-block"><img src="/assets/icons/fi-rr-user.png" alt=""></button>
+      <button class="cart header-icons-hight d-none d-lg-block"><img src="/assets/icons/fi-rr-shopping-cart.png" alt=""></button>
+      <div class="search-box md-search-box header-icons-hight d-flex d-lg-none">
+        <input class="search" type="search" placeholder="Search">
+        <img src="/assets/icons/fi-br-search.png" alt="">
+      </div>
+      <button class="cart header-icons-hight d-block d-lg-none"><img src="/assets/icons/fi-rr-menu-burger.svg" alt=""></button>
     </div>
   </header>
-
-
   <!-- Header end here -->
-
-  <main class="inner-screen mx-auto main-section">
-    <img src="./assets/img/home/bgPhoto.svg" alt="">
-    <div class="intro">
-      <h1>Gorilla Surplus is more than just a gun store.</h1>
-      <p>We offer a wide range of products for a wide range of customers, from amateurs to professionals.</p>
-    </div>
-    <div class="learn">
-      <button class="header-icons-hight">Learn more</button>
-    </div>
-  </main>
-
+  <!-- Popup start -->
   <div class="overlay d-none"></div>
   <section class="popup inner-screen mx-auto d-flex flex-column gap-5 d-none">
     <div class="top-section d-flex justify-content-between align-items-center">
-      <button class="popup-button">Guns & rifles</button>
-      <button class="popup-button">Knives & swords</button>
-      <button class="popup-button">Camping & survival</button>
-      <button class="popup-button">Surplus</button>
-      <button class="popup-button">Bags & packs</button>
-      <button class="popup-button">Clothes</button>
-      <button class="popup-button">Footwear</button>
-      <button class="popup-button">Headwear</button>
-      <button class="popup-button">Accessories</button>
+      <button class="popup-button" id="guns-and-rifles-btn">Guns & rifles</button>
+      <button class="popup-button" id="knives-and-tools-btn">Knives & tools</button>
+      <button class="popup-button" id="men-btn">Men</button>
+      <button class="popup-button" id="women-btn">Women</button>
+      <button class="popup-button" id="bags-and-packs-btn">Bags & packs</button>
+      <button class="popup-button" id="camping-and-survival-btn">Camping & survival</button>
+      <button class="popup-button" id="more-btn">More</button>
     </div>
-    <div class="bottom-section d-flex justify-content-between">
+    <div class="bottom-section d-flex justify-content-between d-none" id="guns-and-rifles">
       <div class="first-col d-flex flex-column">
         <h1>All Guns & rifles </h1>
         <div class="d-flex flex-column">
@@ -137,7 +128,253 @@
         <a href="#">Other</a>
       </div>
     </div>
+    <div class="bottom-section d-flex justify-content-between d-none" id="knives-and-tools">
+      <div class="first-col d-flex flex-column">
+        <div class="d-flex flex-column">
+          <a href="#">Folding Knives</a>
+          <a href="#">Fixed Blade Knives</a>
+          <a href="#">Throwing Knives</a>
+        </div>
+      </div>
+      <div class="d-flex flex-column">
+        <a href="#">Batons & Nightsticks</a>
+        <a href="#">Swords</a>
+        <a href="#">Machetes</a>
+        <a href="#">Sticks & Canes</a>
+        <a href="#">Axes & Tomahawks</a>
+      </div>
+      <div class="second-col d-flex flex-column">
+        <div class="d-flex flex-column">
+          <a href="#">PButterfly & OTF Knives</a>
+          <a href="#">Training Swords</a>
+          <a href="#">Spears</a>
+        </div>
+      </div>
+      <div class="d-flex flex-column">
+        <a href="#">Multi-tools</a>
+        <a href="#">Flashlights</a>
+        <a href="#">Handcuffs & Restraints</a>
+      </div>
+      <div class="third-col d-flex flex-column">
+        <a href="#">Shears & Scissors</a>
+        <a href="#">Pens & Kubatons</a>
+        <a href="#">Sharpeners</a>
+        <a href="#">Sheaths & Scabbards</a>
+        <a href="#">Other Gear & Accessories</a>
+      </div>
+    </div>
+    <div class="bottom-section d-flex justify-content-between d-none" id="men">
+      <div class="first-col d-flex flex-column">
+        <div class="align-self-center">
+          <p>Tops</p>
+        </div>
+        <div class="d-flex">
+          <div class="div">
+            <div class="d-flex flex-column">
+              <p>Safety Vests</p>
+              <a href="#">Jackets & Coats</a>
+              <a href="#">Vests</a>
+              <a href="#">Rain</a>
+            </div>
+            <div class="d-flex flex-column">
+              <p>Hoodies & Sweatshirts</p>
+              <a href="#">Pull Over Hoodie</a>
+              <a href="#">Full Zip Hoodie</a>
+              <a href="#">Crew Neck</a>
+            </div>
+          </div>
+          <div class="div">
+            <div class="d-flex flex-column">
+              <p>Shirts</p>
+              <a href="#">Short Sleave</a>
+              <a href="#">LOng Sleave</a>
+              <a href="#">Polos</a>
+              <a href="#">Button Down</a>
+              <a href="#">Flannal & Plaid</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="second-col d-flex flex-column">
+        <div class="d-flex flex-column">
+          <p>Bottoms</p>
+          <a href="#">Pants</a>
+          <a href="#">Shorts</a>
+          <a href="#">Sweat Pants</a>
+          <a href="#">Underwear</a>
+        </div>
+        <div class="d-flex flex-column">
+          <p>Boots & Shoes</p>
+          <a href="#">Boots</a>
+          <a href="#">Shoes</a>
+          <a href="#">Socks & Accessories</a>
+        </div>
+      </div>
+      <div class="third-col d-flex flex-column">
+        <p>Headwear</p>
+        <a href="#">Caps & Hats</a>
+        <a href="#">Masks & Balaclavas</a>
+        <a href="#">Neckties & Scarves</a>
+        <a href="#">Military Berets</a>
+        <a href="#">Bandanas</a>
+        <a href="#">Head wraps</a>
+        <a href="#">Helmets</a>
+        <a href="#">Beanies & Toques</a>
+        <a href="#">Shemagh or Keffiyeh</a>
+      </div>
+      <div class="fourth-col d-flex flex-column">
+        <p>Gun Gear</p>
+        <p>Bib Overalls & Coveralls</p>
+        <p>Thermal Base Layer</p>
+        <p>Swimwear</p>
+        <p>Gloves</p>
+        <p>Belts & Suspenders</p>
+        <p>Wallets</p>
+      </div>
+    </div>
+    <div class="bottom-section d-flex justify-content-between d-none" id="women">
+      <div class="first-col d-flex flex-column">
+        <div class="d-flex flex-column">
+          <p>Tops</p>
+          <a href="#">Shirts</a>
+          <a href="#">Jackets</a>
+        </div>
+      </div>
+      <div class="second-col d-flex flex-column">
+        <div class="d-flex flex-column">
+          <p>Bottoms</p>
+          <a href="#">Pants</a>
+          <a href="#">Shorts</a>
+          <a href="#">Skirts</a>
+        </div>
+      </div>
+      <div class="third-col d-flex flex-column">
+        <p>Swimwear</p>
+      </div>
+    </div>
+    <div class="bottom-section d-flex justify-content-between d-none" id="bags-and-packs">
+      <div class="first-col d-flex flex-column">
+        <div class="d-flex flex-column">
+          <a href="#">Messenger bags</a>
+          <a href="#">Backpacks</a>
+          <a href="#">Duffel Bags</a>
+          <a href="#">Waist & Fanny Packs</a>
+          <a href="#">Shoulder & Sling Bags</a>
+        </div>
+      </div>
+      <div class="second-col d-flex flex-column">
+        <div class="d-flex flex-column">
+          <a href="#">Cargo & Tool Bags</a>
+          <a href="#">Rolling Luggage Bags</a>
+          <a href="#">Pouches</a>
+          <a href="#">Tablet Sleeves</a>
+          <a href="#">Straps & Accessories</a>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-section d-flex justify-content-between d-none" id="camping-and-survival">
+      <div class="first-col d-flex flex-column">
+        <div class="d-flex flex-column">
+          <p>Survival Gear</p>
+          <a href="#">Bear & Pepper Spray</a>
+          <a href="#">Ammo Cans</a>
+          <a href="#">Fire Starters</a>
+          <a href="#">Rainwear</a>
+          <a href="#">Staps & Repair Kits</a>
+          <a href="#">Compasses & Signaling</a>
+        </div>
+      </div>
+      <div class="second-col d-flex flex-column">
+        <div class="d-flex flex-column">
+          <p>Camping Gear</p>
+          <a href="#">Tarps</a>
+          <a href="#">Paracord Canada</a>
+          <a href="#">First Aid Kits</a>
+          <a href="#">Gillie suits</a>
+          <a href="#">Tents & Sleeping Bags</a>
+        </div>
+      </div>
+      <div class="third-col d-flex flex-column">
+        <a href="#">Hygiene</a>
+        <a href="#">Shovels</a>
+        <a href="#">Utensils</a>
+        <a href="#">Cots & Chairs</a>
+        <a href="#">Hammocks</a>
+        <a href="#">Insect Repellent & Netting</a>
+        <a href="#">Cookware & Mess Kits</a>
+        <a href="#">Towels</a>
+        <a href="#">Pumps</a>
+        <a href="">Climbing Gear</a>
+        <a href="">Lighting</a>
+      </div>
+    </div>
+    <div class="bottom-section d-flex justify-content-between d-none" id="more">
+      <div class="first-col d-flex flex-column">
+        <div class="d-flex flex-column">
+          <p>Military Accessories</p>
+          <a href="#">Sunglasses & Goggles</a>
+          <a href="#">Binoculars & Night Vision </a>
+          <a href="#">Camo Netting</a>
+          <a href="#">Face Paint</a>
+          <a href="#">Training Manuals</a>
+          <a href="#">Locks</a>
+          <a href="#">Knee pads</a>
+          <a href="#">Tactical helmets</a>
+        </div>
+      </div>
+      <div class="second-col d-flex flex-column">
+        <div class="d-flex flex-column">
+          <p>Military Insignia</p>
+          <a href="#">Badges</a>
+          <a href="#">Stickers & Decals</a>
+          <a href="#">Patches & Ranks</a>
+          <a href="#">Dog Tags</a>
+          <a href="#">Pins</a>
+        </div>
+      </div>
+      <div class="third-col d-flex flex-column">
+        <p>Personal Accessories</p>
+        <a href="#">Key Chains</a>
+        <a href="#">Lighters</a>
+        <a href="#">Whistles</a>
+        <a href="#">Watches</a>
+        <a href="#">Flasks</a>
+        <a href="#">Rings</a>
+        <a href="#">Umbrellas</a>
+        <a href="#">Miscellaneous</a>
+      </div>
+      <div class="fourth-col d-flex flex-column">
+        <div class="d-flex flex-column">
+          <p>Kids Clothes</p>
+          <p>Tops</p>
+          <a href="#">T-Shirts</a>
+          <a href="#">Jackets</a>
+          <a href="#">Vests</a>
+        </div>
+        <div class="d-flex flex-column">
+          <p>Bottoms</p>
+          <a href="#">Pants</a>
+          <a href="#">Shorts</a>
+          <p>Coveralls</p>
+        </div>
+      </div>
+      <div class="fivth-col d-flex flex-column">
+        <p>SURPLUS</p>
+      </div>
+    </div>
   </section>
+  <!-- Popup end -->
+
+  <main class="inner-screen mx-auto main-section">
+    <img src="./assets/img/home/bgPhoto.svg" alt="">
+    <div class="intro">
+      <h1 class="fs-1 fs-md-4 fs-lg-5">Gorilla Surplus is more than just a gun store.</h1>
+      <p>We offer a wide range of products for a wide range of customers, from amateurs to professionals.</p>
+    </div>
+    <div class="learn">
+      <button class="header-icons-hight">Learn more</button>
+    </div>
+  </main>
 </body>
 <script type="text/javascript" src="./assets/js/home/popup.js"></script>
 </html>

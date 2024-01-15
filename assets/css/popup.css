@@ -1,3 +1,5 @@
+/* Catalog popup style */
+
 .overlay {
   position: fixed;
   top: 0;
@@ -9,7 +11,7 @@
 
 .popup {
   position: absolute;
-  top: 98px;
+  top: 13%;
   left: 2.22%;
   background-color: #F2F0EA;
   border-radius: 16px;
@@ -17,7 +19,7 @@
 }
 
 .popup-button {
-  width: 129.64px;
+  width: 13.5%;
   height: 52px;
   /* top: 110px
   left: 192.16px */
@@ -44,3 +46,11 @@
 .popup a:hover {
   text-decoration: underline;
 }
+
+/* Catalog sub popup for every button hover */
+
+
+
+/* Mobile menu popup style */
+
+/*  */

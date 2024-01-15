@@ -25,23 +25,27 @@ header {
 }
 
 .logo {
-  width: 112px;
+  width: 110px;
   border-radius: 16px;
 }
 
 .catalog {
-  width: 104px;
+  width: 100px;
   border-radius: 16px;
   background: 2px solid #383634;
 }
 
 .search-box {
-  width: 259px;
+  width: 45%;
   border-radius: 16px;
   border: 2px solid #383634;
   display: flex;
   align-items: center;
   padding: 20px;
+}
+
+.md-search-box {
+  width: 60%;
 }
 
 .search-box input {
@@ -69,6 +73,16 @@ header {
   background: 2px solid #383634;
 }
 
+.user:hover img,
+.cart:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.cart:hover img,
+.cart img {
+  transition: fill 0.3s ease;
+}
+
 .currency select {
   outline: none;
   border: none;
@@ -79,10 +93,12 @@ header {
 .main-section {
   position: relative;
   margin-top: 10px;
+  z-index: -1;
 }
 
 .main-section img {
   width: 100%;
+  height: auto;
 }
 
 .main-section .intro {
@@ -92,9 +108,8 @@ header {
 }
 
 .intro h1 {
-  width: 50%;
+  width: 60%;
   font-family: Oswald;
-  font-size: 54px;
   font-weight: 500;
   line-height: 59px;
   color: #fff;
