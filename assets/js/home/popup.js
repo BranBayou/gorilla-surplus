@@ -48,12 +48,12 @@ const bottomSections = document.querySelectorAll('.bottom-section');
 
 subPopupBtns.forEach((button, index) => {
   button.addEventListener('mouseover', () => {
-    // Hide all bottom sections
     bottomSections.forEach(section => {
       section.classList.add('d-none');
     });
-
-    // Show the corresponding bottom section based on the button's index
     bottomSections[index].classList.remove('d-none');
   });
 });
+
+
+export { overlay };
