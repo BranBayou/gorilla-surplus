@@ -1,5 +1,7 @@
 import { overlay } from './popup.js';
 
+/*  */
+
 const hamburgurMenu = document.getElementById('hamburger-menu-btn');
 const mobileMenu = document.querySelector('.mobile-menu');
 
@@ -12,6 +14,8 @@ overlay.addEventListener('click', (e) => {
   mobileMenu.classList.add('d-none');
   overlay.classList.add('d-none');
 });
+
+/*  */
 
 const mobileCatalogBtn = document.getElementById('mobile-catalog-btn');
 const mobileNavSection = document.getElementById('mobile-nav-section');
