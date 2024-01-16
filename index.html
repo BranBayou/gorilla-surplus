@@ -367,9 +367,9 @@
   </section>
   <!-- Catalog popup end -->
 
-  <!-- Mobile menu start -->
-  <section class="mobile-menu inner-screen mx-auto d-flex flex-column justify-content-center align-items-center py-5 gap-5 d-none">
-    <div class="top-menu d-flex gap-5">
+  <!-- Mobile menu and catalog start -->
+  <section class="mobile-menu inner-screen mx-auto d-flex flex-column justify-content-between gap-5 d-none d-lg-none">
+    <div class="top-menu d-flex justify-content-between">
       <button class="cart catalog header-icons-hight" id="mobile-catalog-btn"><img src="./assets/icons/fi-rr-grid.svg" alt="catalog icon"></button>
       <button class="user header-icons-hight "><img src="/assets/icons/fi-rr-user.png" alt="user profile"></button>
       <button class="currency header-icons-hight "><select id="currency-type header-icons-hight">
@@ -384,7 +384,7 @@
         <li><a href="#">Contact</a></li>
       </ul>
     </div>
-    <div class="mobile-catalog mx-auto d-none" style="width: 80%;">
+    <div class="mobile-catalog inner-screen mx-auto d-none">
       <details class="main-detail" id="details1" style="width: 100%;">
         <summary>
           <div class="details-summary d-flex align-items-center justify-content-between">
@@ -407,61 +407,64 @@
             <a href="#">BB Magazine</a>
           </div>
         </div>
-        <div class="second-col d-flex flex-column px-3">
-          <div class="d-flex flex-column">
-            <p>Pellet Guns</p>
-            <a href="#">Pellet Pistols</a>
-            <a href="#">Pellet Rifies</a>
-            <a href="#">Pellet Magazines</a>
+        <span class="more-categories">
+          <div class="second-col d-flex flex-column px-3">
+            <div class="d-flex flex-column">
+              <p>Pellet Guns</p>
+              <a href="#">Pellet Pistols</a>
+              <a href="#">Pellet Rifies</a>
+              <a href="#">Pellet Magazines</a>
+            </div>
+            <div class="d-flex flex-column">
+              <p>Ammo & Gas</p>
+              <a href="#">Pellets</a>
+              <a href="#">Steel BBs</a>
+              <a href="#">Airsoft Ammo</a>
+              <a href="#">Speed Loaders</a>
+              <a href="#">Co2 Cartridges</a>
+              <a href="#">Green Gas</a>
+            </div>
           </div>
-          <div class="d-flex flex-column">
-            <p>Ammo & Gas</p>
-            <a href="#">Pellets</a>
-            <a href="#">Steel BBs</a>
-            <a href="#">Airsoft Ammo</a>
-            <a href="#">Speed Loaders</a>
-            <a href="#">Co2 Cartridges</a>
-            <a href="#">Green Gas</a>
+          <div class="third-col d-flex flex-column px-3">
+            <p>Airsoft Funs</p>
+            <a href="#">Airsoft Pistols</a>
+            <a href="#">Airsoft SMGs</a>
+            <a href="#">Airsoft Rifies</a>
+            <a href="#">Airsoft Magazinos</a>
+            <a href="#">Airsoft Batteries & Chargors</a>
+            <a href="#">Airsoft Masks</a>
+            <a href="#">Airsoft Launchers</a>
+            <a href="#">Airsoft Internal Parts</a>
+            <a href="#">Airsoft External Parts</a>
           </div>
-        </div>
-        <div class="third-col d-flex flex-column px-3">
-          <p>Airsoft Funs</p>
-          <a href="#">Airsoft Pistols</a>
-          <a href="#">Airsoft SMGs</a>
-          <a href="#">Airsoft Rifies</a>
-          <a href="#">Airsoft Magazinos</a>
-          <a href="#">Airsoft Batteries & Chargors</a>
-          <a href="#">Airsoft Masks</a>
-          <a href="#">Airsoft Launchers</a>
-          <a href="#">Airsoft Internal Parts</a>
-          <a href="#">Airsoft External Parts</a>
-        </div>
-        <div class="fourth-col d-flex flex-column px-3">
-          <p>Gun Gear</p>
-          <a href="#">Scopes</a>
-          <a href="#">Laser Pointers</a>
-          <a href="#">Rails & Mounts</a>
-          <a href="#">Slings</a>
-          <a href="#">Gun Holsters</a>
-          <a href="#">Bi-Pods</a>
-          <a href="#">Gun Mounted Flashlights</a>
-          <a href="#">Gun Sights</a>
-          <a href="#">Rigs & Carriers</a>
-        </div>
-        <div class="fivth-col d-flex flex-column px-3">
-          <p>Gun Accessories</p>
-          <a href="#">Grenades</a>
-          <a href="#">Targets</a>
-          <a href="#">Gun & Rifie Cases</a>
-          <a href="#">Grips & Foregrips</a>
-          <a href="#">Gun Oil</a>
-          <a href="#">Gillie Suits</a>
-          <a href="#">Ear Protection</a>
-          <a href="#">Gun Cleaning Kits</a>
-          <a href="#">Shooting Mats</a>
-          <a href="#">Air Bows</a>
-          <a href="#">Other</a>
-        </div>
+          <div class="fourth-col d-flex flex-column px-3">
+            <p>Gun Gear</p>
+            <a href="#">Scopes</a>
+            <a href="#">Laser Pointers</a>
+            <a href="#">Rails & Mounts</a>
+            <a href="#">Slings</a>
+            <a href="#">Gun Holsters</a>
+            <a href="#">Bi-Pods</a>
+            <a href="#">Gun Mounted Flashlights</a>
+            <a href="#">Gun Sights</a>
+            <a href="#">Rigs & Carriers</a>
+          </div>
+          <div class="fivth-col d-flex flex-column px-3">
+            <p>Gun Accessories</p>
+            <a href="#">Grenades</a>
+            <a href="#">Targets</a>
+            <a href="#">Gun & Rifie Cases</a>
+            <a href="#">Grips & Foregrips</a>
+            <a href="#">Gun Oil</a>
+            <a href="#">Gillie Suits</a>
+            <a href="#">Ear Protection</a>
+            <a href="#">Gun Cleaning Kits</a>
+            <a href="#">Shooting Mats</a>
+            <a href="#">Air Bows</a>
+            <a href="#">Other</a>
+          </div>
+          <span class="show-less-categories-btn px-3">Show less</span>
+        </span>
         <span class="show-more-categories-btn px-3">Show more</span>
       </details>
       <details class="main-detail" id="details1" style="width: 100%;">
@@ -478,32 +481,35 @@
             <a href="#">Throwing Knives</a>
           </div>
         </div>
-        <div class="d-flex flex-column px-3">
-          <a href="#">Batons & Nightsticks</a>
-          <a href="#">Swords</a>
-          <a href="#">Machetes</a>
-          <a href="#">Sticks & Canes</a>
-          <a href="#">Axes & Tomahawks</a>
-        </div>
-        <div class="second-col d-flex flex-column px-3">
-          <div class="d-flex flex-column">
-            <a href="#">PButterfly & OTF Knives</a>
-            <a href="#">Training Swords</a>
-            <a href="#">Spears</a>
+        <span class="more-categories">
+          <div class="d-flex flex-column px-3">
+            <a href="#">Batons & Nightsticks</a>
+            <a href="#">Swords</a>
+            <a href="#">Machetes</a>
+            <a href="#">Sticks & Canes</a>
+            <a href="#">Axes & Tomahawks</a>
           </div>
-        </div>
-        <div class="d-flex flex-column px-3">
-          <a href="#">Multi-tools</a>
-          <a href="#">Flashlights</a>
-          <a href="#">Handcuffs & Restraints</a>
-        </div>
-        <div class="third-col d-flex flex-column px-3">
-          <a href="#">Shears & Scissors</a>
-          <a href="#">Pens & Kubatons</a>
-          <a href="#">Sharpeners</a>
-          <a href="#">Sheaths & Scabbards</a>
-          <a href="#">Other Gear & Accessories</a>
-        </div>
+          <div class="second-col d-flex flex-column px-3">
+            <div class="d-flex flex-column">
+              <a href="#">PButterfly & OTF Knives</a>
+              <a href="#">Training Swords</a>
+              <a href="#">Spears</a>
+            </div>
+          </div>
+          <div class="d-flex flex-column px-3">
+            <a href="#">Multi-tools</a>
+            <a href="#">Flashlights</a>
+            <a href="#">Handcuffs & Restraints</a>
+          </div>
+          <div class="third-col d-flex flex-column px-3">
+            <a href="#">Shears & Scissors</a>
+            <a href="#">Pens & Kubatons</a>
+            <a href="#">Sharpeners</a>
+            <a href="#">Sheaths & Scabbards</a>
+            <a href="#">Other Gear & Accessories</a>
+          </div>
+          <span class="show-less-categories-btn">Show less</span>  
+        </span>
         <span class="show-more-categories-btn px-3">Show more</span>
       </details>
       <details class="main-detail" id="details1" style="width: 100%;">
@@ -742,7 +748,7 @@
       </details>
     </div>
   </section>
-  <!-- Mobile menu end -->
+  <!-- Mobile menu and catalog end -->
 
   <!-- Main section start -->
   <main class="inner-screen mx-auto main-section">

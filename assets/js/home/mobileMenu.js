@@ -1,6 +1,6 @@
 import { overlay } from './popup.js';
 
-/*  */
+/* Mobile hamburger menu */
 
 const hamburgurMenu = document.getElementById('hamburger-menu-btn');
 const mobileMenu = document.querySelector('.mobile-menu');
@@ -25,3 +25,32 @@ mobileCatalogBtn.addEventListener('click', () => {
   mobileNavSection.classList.toggle('d-none');
   mobileCatalog.classList.toggle('d-none');
 });
+
+/* Handle rotate arrow on mobile menu */
+const summaryDivs = document.querySelectorAll('.details-summary');
+    summaryDivs.forEach(summaryDiv => {
+    summaryDiv.addEventListener('click', event => {
+        const clickedDiv = event.currentTarget;
+        const arrow = clickedDiv.querySelector('.summary-arrow');
+        arrow.classList.toggle('rotate-arrow');
+      });
+    });
+
+/*  */
+
+const details = document.querySelectorAll('.main-detail');
+    details.forEach(detail => {
+    const moreCategories = detail.querySelector('.more-categories');
+    const showMoreCategoriesBtn = detail.querySelector('.show-more-categories-btn');
+    const showLessCategoriesBtn = detail.querySelector('.show-less-categories-btn') ;
+
+    showMoreCategoriesBtn.addEventListener('click', () => {
+      moreCategories.style.display = 'block';
+      showMoreCategoriesBtn.style.display = 'none';
+    });
+
+    showLessCategoriesBtn.addEventListener('click', () => {
+      moreCategories.style.display = 'none';
+      showMoreCategoriesBtn.style.display = 'block';
+    });
+  });

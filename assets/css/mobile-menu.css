@@ -1,10 +1,30 @@
 .mobile-menu {
   position: absolute;
-  top: 13%;
+  top: 25%;
   left: 2.22%;
   background-color: #F2F0EA;
-  border-radius: 16px;
+  border-radius: 10px;
   padding: 10px 10px 50px 10px;
+}
+
+.mobile-menu .cart,
+.user,
+.currency {
+  border-radius: 10px;
+}
+
+.bottom-menu ul li a{
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #383634;
+}
+
+.bottom-menu ul li:hover {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .main-detail summary {
@@ -15,4 +35,12 @@
   height: 7px;
   width: 10px;
   transition: transform 0.3s ease;
+}
+
+.rotate-arrow {
+  transform: rotate(180deg);
+}
+
+.more-categories {
+  display: none;
 }
