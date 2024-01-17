@@ -46,6 +46,7 @@ header {
 
 .md-search-box {
   width: 60%;
+  border-radius: 10px;
 }
 
 .search-box input {
@@ -55,6 +56,14 @@ header {
   background-color: #F2F0EA;
   border: none;
   outline: none;
+}
+
+#hamburger-menu-btn {
+  border-radius: 10px;
+}
+
+#md-cart {
+  border-radius: 10px;
 }
 
 .nav li a {
@@ -91,14 +100,20 @@ header {
 /* Main section style */
 
 .main-section {
+  height: 550px;
   position: relative;
   margin-top: 10px;
+  border-radius: 16px;
   z-index: -1;
+  background-image: url("../img/home/bgPhoto.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .main-section img {
+  max-width: 1376px;
   width: 100%;
-  height: auto;
 }
 
 .main-section .intro {
@@ -133,3 +148,90 @@ header {
   border: 1px solid #383634
 }
 
+/**/
+
+.new-arrival-header {
+  height: 100px;
+  margin-top: 20px;
+}
+
+.new-arrival-header p {
+  font-family: Oswald;
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 59px;
+}
+
+.new-arrival-cards {
+  height: 395px;
+  overflow: scroll;
+}
+
+.new-arrival-cards .card {
+  height: 99%;
+  border-radius: 16px;
+}
+
+.discount img {
+  padding: 5px 5px 0 0;
+}
+
+.product-image-and-title img {
+  width: 200px;
+  height: 200px;
+}
+
+.product-image-and-title h5 {
+  font-family: Oswald;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+/* New arrivals sections with media */
+
+@media screen and (min-width: 992px) {
+  .new-arrival-cards .card{
+    flex: 1 0 calc(25% - 10px);
+    min-width: 0; 
+    max-width: calc(25% - 10px); 
+    padding: 10px;
+    margin: 3px 2px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .new-arrival-cards .card {
+    flex: 1 0 calc(33.333% - 6px);
+    min-width: 0; 
+    max-width: calc(33.333% - 6px); 
+    margin: 3px 3px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .new-arrival-cards {
+    height: 395px;
+    overflow: unset;
+  }
+  
+  .new-arrival-cards .card {
+    flex: 1 0 49%;
+    min-width: 0; 
+    max-width: calc(49%); 
+    margin: 3px 3px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .new-arrival-cards {
+    height: 395px;
+    overflow: unset;
+  }
+
+  .new-arrival-cards .card {
+    flex: 1 0 49%;
+    min-width: 0; 
+    margin: 3px 3px;
+  }
+}

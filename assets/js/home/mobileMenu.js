@@ -15,7 +15,7 @@ overlay.addEventListener('click', (e) => {
   overlay.classList.add('d-none');
 });
 
-/*  */
+/* Handle mobile menu show navigation section */
 
 const mobileCatalogBtn = document.getElementById('mobile-catalog-btn');
 const mobileNavSection = document.getElementById('mobile-nav-section');
@@ -36,7 +36,7 @@ const summaryDivs = document.querySelectorAll('.details-summary');
       });
     });
 
-/*  */
+/* Handle show more and less catalogs in mebile menu */
 
 const details = document.querySelectorAll('.main-detail');
     details.forEach(detail => {

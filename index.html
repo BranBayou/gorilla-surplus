@@ -16,11 +16,11 @@
   <header class="inner-screen mx-auto d-flex justify-content-between align-items-center">
     <div class="left-section d-flex gap-2">
       <a href="index.html"><img class="bg-dark logo header-icons-hight" src="./assets/icons/logo.png" alt="logo"></a>
-      <button class="cart header-icons-hight d-lg-none"><img src="/assets/icons/fi-rr-shopping-cart.png" alt=""></button>
-      <button class="catalog header-icons-hight d-none d-lg-block">Catalog</button>
+      <button type="button" class="cart header-icons-hight d-lg-none" id="md-cart"><img src="/assets/icons/fi-rr-shopping-cart.png" alt=""></button>
+      <button type="button" class="catalog header-icons-hight d-none d-lg-block" id="catalog">Catalog</button>
       <div class="search-box header-icons-hight d-none d-lg-flex">
         <input class="search" type="search" placeholder="Search">
-        <img src="/assets/icons/fi-br-search.png" alt="">
+        <img src="/assets/icons/fi-br-search.png" alt="search-icon">
       </div>
     </div>
     <div class="center-section d-none d-lg-block">
@@ -35,13 +35,13 @@
         <option value="usd">USD</option>
         <option value="euro">CAD</option>
       </select></button>
-      <button class="user header-icons-hight d-none d-lg-block"><img src="/assets/icons/fi-rr-user.png" alt=""></button>
-      <button class="cart header-icons-hight d-none d-lg-block"><img src="/assets/icons/fi-rr-shopping-cart.png" alt=""></button>
+      <button type="button" class="user header-icons-hight d-none d-lg-block"><img src="/assets/icons/fi-rr-user.png" alt=""></button>
+      <button type="button" class="cart header-icons-hight d-none d-lg-block"><img src="/assets/icons/fi-rr-shopping-cart.png" alt=""></button>
       <div class="search-box md-search-box header-icons-hight d-flex d-lg-none">
         <input class="search" type="search" placeholder="Search">
-        <img src="/assets/icons/fi-br-search.png" alt="">
+        <img src="/assets/icons/fi-br-search.png" alt="search-icon">
       </div>
-      <button class="cart header-icons-hight d-block d-lg-none" id="hamburger-menu-btn"><img src="/assets/icons/fi-rr-menu-burger.svg" alt=""></button>
+      <button type="button" class="cart header-icons-hight d-block d-lg-none" id="hamburger-menu-btn"><img src="/assets/icons/fi-rr-menu-burger.svg" alt=""></button>
     </div>
   </header>
   <!-- Header end here -->
@@ -50,13 +50,13 @@
   <div class="overlay d-none"></div>
   <section class="popup inner-screen mx-auto d-flex flex-column gap-5 d-none">
     <div class="top-section d-flex justify-content-between align-items-center">
-      <button class="popup-button" id="guns-and-rifles-btn">Guns & rifles</button>
-      <button class="popup-button" id="knives-and-tools-btn">Knives & tools</button>
-      <button class="popup-button" id="men-btn">Men</button>
-      <button class="popup-button" id="women-btn">Women</button>
-      <button class="popup-button" id="bags-and-packs-btn">Bags & packs</button>
-      <button class="popup-button" id="camping-and-survival-btn">Camping & survival</button>
-      <button class="popup-button" id="more-btn">More</button>
+      <button type="button" class="popup-button" id="guns-and-rifles-btn">Guns & rifles</button>
+      <button type="button" class="popup-button" id="knives-and-tools-btn">Knives & tools</button>
+      <button type="button" class="popup-button" id="men-btn">Men</button>
+      <button type="button" class="popup-button" id="women-btn">Women</button>
+      <button type="button" class="popup-button" id="bags-and-packs-btn">Bags & packs</button>
+      <button type="button" class="popup-button" id="camping-and-survival-btn">Camping & survival</button>
+      <button type="button" class="popup-button" id="more-btn">More</button>
     </div>
     <div class="bottom-section d-flex justify-content-between d-none" id="guns-and-rifles">
       <div class="first-col d-flex flex-column">
@@ -370,15 +370,15 @@
   <!-- Mobile menu and catalog start -->
   <section class="mobile-menu inner-screen mx-auto d-flex flex-column justify-content-between gap-5 d-none d-lg-none">
     <div class="top-menu d-flex justify-content-between">
-      <button class="cart catalog header-icons-hight" id="mobile-catalog-btn"><img src="./assets/icons/fi-rr-grid.svg" alt="catalog icon"></button>
-      <button class="user header-icons-hight "><img src="/assets/icons/fi-rr-user.png" alt="user profile"></button>
-      <button class="currency header-icons-hight "><select id="currency-type header-icons-hight">
+      <button type="button" class="cart catalog header-icons-hight" id="mobile-catalog-btn"><img src="./assets/icons/fi-rr-grid.svg" alt="catalog icon"></button>
+      <button type="button" class="user header-icons-hight "><img src="/assets/icons/fi-rr-user.png" alt="user profile"></button>
+      <button type="button" class="currency header-icons-hight "><select id="currency-type header-icons-hight">
         <option value="usd">USD</option>
         <option value="euro">CAD</option>
       </select></button>
     </div>
     <div class="bottom-menu" id="mobile-nav-section">
-      <ul class="d-flex flex-column align-items-center gap-5">
+      <ul class="d-flex flex-column align-items-center p-0 gap-5">
         <li><a href="#">About us</a></li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">Contact</a></li>
@@ -752,16 +752,120 @@
 
   <!-- Main section start -->
   <main class="inner-screen mx-auto main-section">
-    <img src="./assets/img/home/bgPhoto.svg" alt="">
     <div class="intro">
       <h1 class="fs-1 fs-md-4 fs-lg-5">Gorilla Surplus is more than just a gun store.</h1>
       <p>We offer a wide range of products for a wide range of customers, from amateurs to professionals.</p>
     </div>
     <div class="learn">
-      <button class="header-icons-hight">Learn more</button>
+      <button type="button" class="header-icons-hight">Learn more</button>
     </div>
   </main>
   <!-- Main section end -->
+
+  <!-- New arrival section start -->
+  <div class="inner-screen mx-auto new-arrival-section">
+    <div class="new-arrival-header d-flex align-items-center">
+      <h1>New arrivals</h1>
+    </div>
+    <div class="new-arrival-cards d-flex flex-wrap">
+      <div class="card p-3">
+        <span class="discount d-flex">
+          <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
+          <p>-50%</p>
+        </span>
+        <div class="product-image-and-title d-flex flex-column">
+          <img src="./assets/img/home/image (1).png" class="product-image align-self-center" alt="product-image">
+          <h5 class="card-title">Ncstar 3W 150 Lumen Led Flashlig...</h5>
+        </div>
+        <div class=" d-flex justify-content-between align-items-end">
+          <div class="div">
+            <p class="m-0 p-0">99.99</p>
+            <h4>49.99 CAD</h4>
+          </div>
+          <div class="div align-self-center">
+            <a href="#" class="btn"><img src="./assets/icons/fi-rr-shopping-cart.svg" alt="cart"></a>
+          </div>
+        </div>
+      </div>
+      <div class="card p-3">
+        <div class="discount d-flex">
+          <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
+          <p>-50%</p>
+        </div>
+        <div class="product-image-and-title d-flex flex-column">
+          <img src="./assets/img/home/image 5.png" class="product-image align-self-center" alt="product-image">
+          <h5 class="card-title">Ncstar 3W 150 Lumen Led Flashlig...</h5>
+        </div>
+        <div class="d-flex justify-content-between align-items-end">
+          <div class="div">
+            <p class="m-0 p-0">99.99</p>
+            <h4>49.99 CAD</h4>
+          </div>
+          <div class="div align-self-center">
+            <a href="#" class="btn"><img src="./assets/icons/fi-rr-shopping-cart.svg" alt="cart"></a>
+          </div>
+        </div>
+      </div>
+      <div class="card p-3">
+        <div class="discount d-flex">
+          <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
+          <p>-50%</p>
+        </div>
+        <div class="product-image-and-title d-flex flex-column">
+          <img src="./assets/img/home/image 5 (1).png" class="product-image align-self-center" alt="product-image">
+          <h5 class="card-title">Ncstar 3W 150 Lumen Led Flashlig...</h5>
+        </div>
+        <div class="d-flex justify-content-between align-items-end">
+          <div class="div">
+            <p class="m-0 p-0">99.99</p>
+            <h4>49.99 CAD</h4>
+          </div>
+          <div class="div align-self-center">
+            <a href="#" class="btn"><img src="./assets/icons/fi-rr-shopping-cart.svg" alt="cart"></a>
+          </div>
+        </div>
+      </div>
+      <div class="card p-3">
+        <div class="discount d-flex">
+          <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
+          <p>-50%</p>
+        </div>
+        <div class="product-image-and-title d-flex flex-column">
+          <img src="./assets/img/home/image 5 (2).png" class="product-image align-self-center" alt="product-image">
+          <h5 class="card-title">Ncstar 3W 150 Lumen Led Flashlig...</h5>
+        </div>
+        <div class="d-flex justify-content-between align-items-end">
+          <div class="div">
+            <p class="m-0 p-0">99.99</p>
+            <h4>49.99 CAD</h4>
+          </div>
+          <div class="div align-self-center">
+            <a href="#" class="btn"><img src="./assets/icons/fi-rr-shopping-cart.svg" alt="cart"></a>
+          </div>
+        </div>
+      </div>
+      <div class="card p-3">
+        <div class="discount d-flex">
+          <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
+          <p>-50%</p>
+        </div>
+        <div class="product-image-and-title d-flex flex-column">
+          <img src="./assets/img/home/image 5 (2).png" class="product-image align-self-center" alt="product-image">
+          <h5 class="card-title">Ncstar 3W 150 Lumen Led Flashlig...</h5>
+        </div>
+        <div class="d-flex justify-content-between align-items-end">
+          <div class="div">
+            <p class="m-0 p-0">99.99</p>
+            <h4>49.99 CAD</h4>
+          </div>
+          <div class="div align-self-center">
+            <a href="#" class="btn"><img src="./assets/icons/fi-rr-shopping-cart.svg" alt="cart"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- New arrival section end -->
 
 </body>
 <script type="module" src="./assets/js/home/popup.js"></script>

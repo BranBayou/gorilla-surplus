@@ -1,15 +1,13 @@
 .mobile-menu {
   position: absolute;
-  top: 25%;
+  top: 5%;
   left: 2.22%;
   background-color: #F2F0EA;
   border-radius: 10px;
   padding: 10px 10px 50px 10px;
 }
 
-.mobile-menu .cart,
-.user,
-.currency {
+.top-menu button {
   border-radius: 10px;
 }
 

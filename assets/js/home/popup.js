@@ -1,6 +1,6 @@
 /* Catalog popup */
 
-const catalogBtn = document.querySelector('.catalog');
+const catalogBtn = document.getElementById('catalog');
 const popupScreen = document.querySelector('.popup');
 const overlay = document.querySelector('.overlay'); 
 
@@ -11,6 +11,12 @@ catalogBtn.addEventListener('mouseover', () => {
   isMouseOverButton = true;
   showPopup();
 });
+
+catalogBtn.addEventListener('click', () => {
+  isMouseOverButton = true;
+  showPopup();
+});
+
 
 catalogBtn.addEventListener('mouseout', () => {
   isMouseOverButton = false;
