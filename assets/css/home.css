@@ -237,6 +237,70 @@ header {
   line-height: 20px;
 }
 
+/* About section */
+
+.about-section-con {
+  height: 450px;
+  background-image: url('../img/home/premium_photo-1683133499812-cde72f3a0f6c-transformed\ 1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Footer section */
+
+footer {
+  background-color: #383634;
+}
+
+footer ul li a {
+  color: #F2F0EA;
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+footer .location {
+  font-family: Oswald;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  color: #F2F0EA;
+}
+
+footer .address {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.left-footer {
+  border-bottom: 1px solid #fff;
+}
+
+.footer-social-links ul {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-newsletter .signup-text {
+  font-family: Oswald;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  color: #F2F0EA;
+}
+
+.footer-newsletter input {
+  background-color: #383634;
+}
+
+.footer-newsletter .copy-right {
+  color: #F2F0EA;
+}
+
 /* Media Queries */
 
 @media screen and (min-width: 992px) {
