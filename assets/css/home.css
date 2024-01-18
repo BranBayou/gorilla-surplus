@@ -148,7 +148,11 @@ header {
   border: 1px solid #383634
 }
 
-/**/
+/* New arrivals section */
+
+.new-arrival-section {
+  padding: 30px 0;
+}
 
 .new-arrival-header {
   height: 100px;
@@ -164,12 +168,14 @@ header {
 
 .new-arrival-cards {
   height: 395px;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .new-arrival-cards .card {
   height: 99%;
+  background-color: #fff;
   border-radius: 16px;
+  z-index: -1;
 }
 
 .discount img {
@@ -188,10 +194,61 @@ header {
   line-height: 21px;
 }
 
-/* New arrivals sections with media */
+/* Discounted Section */
+
+.discounted-main-con {
+  background-color: #383634;
+  padding: 30px 0;
+}
+
+.discounted-header h1 {
+  color: #fff;
+  padding: 20px 0;
+}
+
+.discounted-cards {
+  height: 395px;
+  overflow-y: scroll;
+}
+
+.discounted-cards .card {
+  height: 99%;
+  background-color: #fff;
+  border-radius: 16px;
+  z-index: 0;
+}
+/* Partners section */
+
+.partners-main-con .partners-intro .title {
+  font-family: Oswald;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 59px;
+}
+
+.partners-main-con .partners-intro {
+  width: 50%;
+}
+
+.partners-intro .partners-description {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* Media Queries */
 
 @media screen and (min-width: 992px) {
   .new-arrival-cards .card{
+    flex: 1 0 calc(25% - 10px);
+    min-width: 0; 
+    max-width: calc(25% - 10px); 
+    padding: 10px;
+    margin: 3px 2px;
+  }
+
+  .discounted-cards .card{
     flex: 1 0 calc(25% - 10px);
     min-width: 0; 
     max-width: calc(25% - 10px); 
@@ -207,15 +264,34 @@ header {
     max-width: calc(33.333% - 6px); 
     margin: 3px 3px;
   }
+
+  .discounted-cards  .card {
+    flex: 1 0 calc(33.333% - 6px);
+    min-width: 0; 
+    max-width: calc(33.333% - 6px); 
+    margin: 3px 3px;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
   .new-arrival-cards {
-    height: 395px;
-    overflow: unset;
+    height: auto;
+    overflow-y: unset;
   }
   
   .new-arrival-cards .card {
+    flex: 1 0 49%;
+    min-width: 0; 
+    max-width: calc(49%); 
+    margin: 3px 3px;
+  }
+
+  .discounted-cards {
+    height: auto;
+    overflow-y: unset;
+  }
+  
+  .discounted-cards .card {
     flex: 1 0 49%;
     min-width: 0; 
     max-width: calc(49%); 
@@ -225,13 +301,38 @@ header {
 
 @media screen and (max-width: 576px) {
   .new-arrival-cards {
-    height: 395px;
-    overflow: unset;
+    height: auto;
+    overflow-y: unset;
   }
 
   .new-arrival-cards .card {
     flex: 1 0 49%;
     min-width: 0; 
     margin: 3px 3px;
+  }
+
+  .discounted-cards {
+    height: auto;
+    overflow-y: unset;
+  }
+
+  .discounted-cards .card {
+    flex: 1 0 49%;
+    min-width: 0; 
+    margin: 3px 3px;
+  }
+
+  .partners-main-con {
+    flex-direction: column;
+  }
+
+  .partners-main-con .partners-intro,
+  .partners-btn-div {
+    width: 100%;
+  }
+  .partners-btn-div button{
+    margin: 20px 0;
+    width: 100%;
+    height: 150px;
   }
 }
