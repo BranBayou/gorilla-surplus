@@ -18,6 +18,20 @@ ul li a {
   text-decoration: none;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+
 /* Header section */
 
 header {
@@ -152,11 +166,11 @@ header {
 
 .new-arrival-section {
   padding: 30px 0;
+  margin: 20px 0;
 }
 
-.new-arrival-header {
-  height: 100px;
-  margin-top: 20px;
+.new-arrival-header h1{
+  padding: 30px 0;
 }
 
 .new-arrival-header p {
@@ -209,6 +223,13 @@ header {
 .discounted-cards {
   height: 395px;
   overflow-y: scroll;
+}
+
+.card:hover .product-image,
+.card:hover .card-title {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
 
 .discounted-cards .card {
