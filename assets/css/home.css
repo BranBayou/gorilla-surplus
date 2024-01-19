@@ -217,6 +217,7 @@ header {
   border-radius: 16px;
   z-index: 0;
 }
+
 /* Partners section */
 
 .partners-main-con .partners-intro .title {
@@ -443,12 +444,43 @@ footer .address {
   }
 
 
+  footer {
+    justify-content: center;
+  }
+
+  .left-footer {
+    flex-direction: column;
+    gap: 0 !important;
+  }
+
+  .footer-links,
+  .policies {
+    text-align: center;
+  }
+
+  .footer-links  ul{
+    padding: 0;
+  }
+
+  .policies ul {
+    padding: 0; 
+  }
+
   .footer-social-links {
     flex-direction: column;
+    gap: 0 !important;
   }
 
   .footer-social-links .devider {
     transform: rotate(90deg);
+  }
+
+  .locations {
+    text-align: center;
+  }
+
+  .location-and-signup {
+    flex-direction: column;
   }
 
   .footer-border {
@@ -549,6 +581,12 @@ footer .address {
 
   .footer-border {
     display: none;
+  }
+
+  .footer-bottom .copy-right {
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
   }
 
 }
