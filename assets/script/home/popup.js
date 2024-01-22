@@ -7,7 +7,7 @@ const overlay = document.querySelector('.overlay');
 let isMouseOverButton = false;
 let isMouseOverPopup = false;
 
-catalogBtn.addEventListener('mouseover', () => {
+catalogBtn.addEventListener('mouseenter', () => {
   isMouseOverButton = true;
   showPopup();
 });
@@ -18,17 +18,17 @@ catalogBtn.addEventListener('click', () => {
 });
 
 
-catalogBtn.addEventListener('mouseout', () => {
+catalogBtn.addEventListener('mouseleave', () => {
   isMouseOverButton = false;
   hidePopup();
 });
 
-popupScreen.addEventListener('mouseover', () => {
+popupScreen.addEventListener('mouseenter', () => {
   isMouseOverPopup = true;
   showPopup();
 });
 
-popupScreen.addEventListener('mouseout', () => {
+popupScreen.addEventListener('mouseleave', () => {
   isMouseOverPopup = false;
   hidePopup();
 });

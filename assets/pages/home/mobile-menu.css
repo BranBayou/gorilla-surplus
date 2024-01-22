@@ -43,3 +43,16 @@
 .more-categories {
   display: none;
 }
+
+.mobile-catalog a {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  text-decoration: none;
+  color: gray;
+}
+
+.mobile-catalog a:hover {
+  text-decoration: underline;
+}

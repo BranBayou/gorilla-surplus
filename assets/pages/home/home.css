@@ -47,6 +47,10 @@ header {
   width: 100px;
   border-radius: 16px;
   background: 2px solid #383634;
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
 }
 
 .search-box {
@@ -119,15 +123,10 @@ header {
   margin-top: 10px;
   border-radius: 16px;
   z-index: -1;
-  background-image: url("../img/home/bgPhoto.svg");
+  background-image: url("../../img/home/Bg\ Photo.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.main-section img {
-  max-width: 1376px;
-  width: 100%;
 }
 
 .main-section .intro {
@@ -138,6 +137,7 @@ header {
 
 .intro h1 {
   width: 60%;
+  font-size: 48px;
   font-family: Oswald;
   font-weight: 500;
   line-height: 59px;
@@ -153,13 +153,17 @@ header {
   color: #fff;
 }
 
-.learn button {
+.main-section button {
   position: absolute;
   right: 10px;
   bottom: 10px;
   width: 253px;
   border-radius: 16px;
-  border: 1px solid #383634
+  border: 1px solid #383634;
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
 }
 
 /* New arrivals section */
@@ -171,6 +175,10 @@ header {
 
 .new-arrival-header h1{
   padding: 30px 0;
+  font-family: Oswald;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 59px;
 }
 
 .new-arrival-header p {
@@ -189,11 +197,28 @@ header {
   height: 99%;
   background-color: #fff;
   border-radius: 16px;
-  z-index: -1;
 }
 
-.discount img {
+.new-arrival-cards .card:hover {
+  cursor: pointer;
+}
+
+.card .discount {
+  background-color: 	#ffb09c;
+  width: 70px;
+  height: 34px;
+  border-radius: 10px;
+  padding: 5px;
+  z-index: 1;
+}
+
+.card .discount img {
   padding: 5px 5px 0 0;
+  height: 18px;
+}
+
+.card .discount p {
+  padding-left: 5px;
 }
 
 .product-image-and-title img {
@@ -206,6 +231,42 @@ header {
   font-size: 20px;
   font-weight: 500;
   line-height: 21px;
+  z-index: 1;
+}
+
+.btn img {
+  border: 1px solid #383634;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.discouted-price {
+  font-family: Oswald;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #7E7F81;
+  text-decoration: line-through; 
+}
+
+.price-now {
+  font-family: Oswald;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 41px;
+}
+
+.price-now span {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  color: #7E7F81;
+}
+
+.new-arrival-section .new-arrival-cards .card:hover .product-image {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
 
 /* Discounted Section */
@@ -218,6 +279,10 @@ header {
 .discounted-header h1 {
   color: #fff;
   padding: 20px 0;
+  font-family: Oswald;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 59px;
 }
 
 .discounted-cards {
@@ -225,11 +290,11 @@ header {
   overflow-y: scroll;
 }
 
-.card:hover .product-image,
-.card:hover .card-title {
+.discounted-main-con .card:hover .product-image {
   cursor: pointer;
   transform: scale(1.1);
   transition: transform 0.3s ease;
+  z-index: -1;
 }
 
 .discounted-cards .card {
@@ -239,11 +304,15 @@ header {
   z-index: 0;
 }
 
+.discounted-cards .card:hover {
+  cursor: pointer;
+}
+
 /* Partners section */
 
 .partners-main-con .partners-intro .title {
   font-family: Oswald;
-  font-size: 50px;
+  font-size: 48px;
   font-weight: 500;
   line-height: 59px;
 }
@@ -259,6 +328,13 @@ header {
   line-height: 20px;
 }
 
+.partners-btn-div button {
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
 /* About section */
 
 .about-section-con {
@@ -268,7 +344,7 @@ header {
 .about-section-left {
   height: 440px;
   width: 65%;
-  background-image: url('../img/home/premium_photo-1683133499812-cde72f3a0f6c-transformed\ 1.png');
+  background-image: url('../../img/home/premium_photo-1683133499812-cde72f3a0f6c-transformed\ 1.png');
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -277,7 +353,7 @@ header {
 .about-section-right {
   height: 440px;
   width: 34%;
-  background-image: url('../img/home/Logob.svg');
+  background-image: url('../../img/home/Logob.svg');
   background-size: center;
   background-repeat: no-repeat;
   background-position: center;
@@ -291,7 +367,7 @@ header {
 
 .about-section-left .about-us-text {
   font-family: Oswald;
-  font-size: 54px;
+  font-size: 48px;
   font-weight: 500;
   line-height: 59px;
 }
@@ -306,6 +382,10 @@ header {
 
 .about-us-btn {
   width: 100%;
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
 }
 
 
@@ -372,6 +452,18 @@ footer .address {
 
 .footer-bottom .copy-right {
   color: gray;
+}
+
+/* Mobile copy right */
+
+.mobile-copy-right {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
 }
 
 /* Media Queries */
