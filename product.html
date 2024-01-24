@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gorilla Surplus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Inter:wght@300;400;500&family=Lato&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+  <link rel="stylesheet" href="./assets/pages/home/custom.css">
+  <link rel="stylesheet" href="./assets/pages/home/home.css">
+  <link rel="stylesheet" href="./assets/pages/home/popup.css">
+  <link rel="stylesheet" href="./assets/pages/home/mobile-menu.css">
+  <link rel="stylesheet" href="./assets/pages/product/product.css">
+</head>
+<body class="position-relative">
+  <!-- Header start here -->
+  <header class="inner-screen mx-auto d-flex justify-content-between align-items-center">
+    <div class="left-section d-flex gap-2">
+      <a href="index.html"><img class="bg-dark logo header-icons-hight" src="./assets/icons/logo.png" alt="logo"></a>
+      <button type="button" class="cart header-icons-hight d-lg-none" id="md-cart"><img src="/assets/icons/fi-rr-shopping-cart.png" alt=""></button>
+      <button type="button" class="catalog header-icons-hight d-none d-lg-block" id="catalog">Catalog</button>
+      <div class="search-box header-icons-hight d-none d-lg-flex">
+        <input class="search" type="search" placeholder="Search">
+        <img src="/assets/icons/fi-br-search.png" alt="search-icon">
+      </div>
+    </div>
+    <div class="center-section d-none d-lg-block">
+      <ul class="nav d-flex justify-content-center align-items-center gap-lg-2 gap-xl-5">
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="right-section d-flex justify-content-end gap-2">
+      <button class="currency header-icons-hight d-none d-lg-block"><select id="currency-type header-icons-hight">
+        <option value="usd">USD</option>
+        <option value="euro">CAD</option>
+      </select></button>
+      <button type="button" class="user header-icons-hight d-none d-lg-block"><img src="/assets/icons/fi-rr-user.png" alt=""></button>
+      <button type="button" class="cart header-icons-hight d-none d-lg-block"><img src="/assets/icons/fi-rr-shopping-cart.png" alt=""></button>
+      <div class="search-box md-search-box header-icons-hight d-flex d-lg-none">
+        <input class="search" type="search" placeholder="Search">
+        <img src="/assets/icons/fi-br-search.png" alt="search-icon">
+      </div>
+      <button type="button" class="cart header-icons-hight d-block d-lg-none" id="hamburger-menu-btn"><img src="/assets/icons/fi-rr-menu-burger.svg" alt=""></button>
+    </div>
+  </header>
+  <!-- Header end here -->
+
+  <!-- Catalog popup start -->
+  <div class="overlay d-none"></div>
+  <section class="popup inner-screen mx-auto d-flex flex-column gap-5 d-none">
+    <div class="top-section d-flex justify-content-between align-items-center">
+      <button type="button" class="popup-button" id="guns-and-rifles-btn">Guns & rifles</button>
+      <button type="button" class="popup-button" id="knives-and-tools-btn">Knives & tools</button>
+      <button type="button" class="popup-button" id="men-btn">Men</button>
+      <button type="button" class="popup-button" id="women-btn">Women</button>
+      <button type="button" class="popup-button" id="bags-and-packs-btn">Bags & packs</button>
+      <button type="button" class="popup-button" id="camping-and-survival-btn">Camping & survival</button>
+      <button type="button" class="popup-button" id="more-btn">More</button>
+    </div>
+    <div class="bottom-section d-flex justify-content-between d-none" id="guns-and-rifles">
+      <div class="first-col d-flex flex-column">
+        <h1>All Guns & rifles </h1>
+        <div class="d-flex flex-column">
+          <p>Blank Guns</p>
+          <a href="#">Blank Guns</a>
+          <a href="#">Blank Gun Magazine</a>
+        </div>
+        <div class="d-flex flex-column">
+          <p>BB Guns</p>
+          <a href="#">BB Pistols</a>
+          <a href="#">BB SMGs</a>
+          <a href="#">BB Rifies</a>
+          <a href="#">BB Magazine</a>
+        </div>
+      </div>
+      <div class="second-col d-flex flex-column">
+        <div class="d-flex flex-column">
+          <p>Pellet Guns</p>
+          <a href="#">Pellet Pistols</a>
+          <a href="#">Pellet Rifies</a>
+          <a href="#">Pellet Magazines</a>
+        </div>
+        <div class="d-flex flex-column">
+          <p>Ammo & Gas</p>
+          <a href="#">Pellets</a>
+          <a href="#">Steel BBs</a>
+          <a href="#">Airsoft Ammo</a>
+          <a href="#">Speed Loaders</a>
+          <a href="#">Co2 Cartridges</a>
+          <a href="#">Green Gas</a>
+        </div>
+      </div>
+      <div class="third-col d-flex flex-column">
+        <p>Airsoft Funs</p>
+        <a href="#">Airsoft Pistols</a>
+        <a href="#">Airsoft SMGs</a>
+        <a href="#">Airsoft Rifies</a>
+        <a href="#">Airsoft Magazinos</a>
+        <a href="#">Airsoft Batteries & Chargors</a>
+        <a href="#">Airsoft Masks</a>
+        <a href="#">Airsoft Launchers</a>
+        <a href="#">Airsoft Internal Parts</a>
+        <a href="#">Airsoft External Parts</a>
+      </div>
+      <div class="fourth-col d-flex flex-column">
+        <p>Gun Gear</p>
+        <a href="#">Scopes</a>
+        <a href="#">Laser Pointers</a>
+        <a href="#">Rails & Mounts</a>
+        <a href="#">Slings</a>
+        <a href="#">Gun Holsters</a>
+        <a href="#">Bi-Pods</a>
+        <a href="#">Gun Mounted Flashlights</a>
+        <a href="#">Gun Sights</a>
+        <a href="#">Rigs & Carriers</a>
+      </div>
+      <div class="fivth-col d-flex flex-column">
+        <p>Gun Accessories</p>
+        <a href="#">Grenades</a>
+        <a href="#">Targets</a>
+        <a href="#">Gun & Rifie Cases</a>
+        <a href="#">Grips & Foregrips</a>
+        <a href="#">Gun Oil</a>
+        <a href="#">Gillie Suits</a>
+        <a href="#">Ear Protection</a>
+        <a href="#">Gun Cleaning Kits</a>
+        <a href="#">Shooting Mats</a>
+        <a href="#">Air Bows</a>
+        <a href="#">Other</a>
+      </div>
+    </div>
+    <div class="bottom-section d-flex justify-content-between d-none" id="knives-and-tools">
+      <div class="first-col d-flex flex-column">
+        <div class="d-flex flex-column">
+          <a href="#">Folding Knives</a>
+          <a href="#">Fixed Blade Knives</a>
+          <a href="#">Throwing Knives</a>
+        </div>
+      </div>
+      <div class="d-flex flex-column">
+        <a href="#">Batons & Nightsticks</a>
+        <a href="#">Swords</a>
+        <a href="#">Machetes</a>
+        <a href="#">Sticks & Canes</a>
+        <a href="#">Axes & Tomahawks</a>
+      </div>
+      <div class="second-col d-flex flex-column">
+        <div class="d-flex flex-column">
+          <a href="#">PButterfly & OTF Knives</a>
+          <a href="#">Training Swords</a>
+          <a href="#">Spears</a>
+        </div>
+      </div>
+      <div class="d-flex flex-column">
+        <a href="#">Multi-tools</a>
+        <a href="#">Flashlights</a>
+        <a href="#">Handcuffs & Restraints</a>
+      </div>
+      <div class="third-col d-flex flex-column">
+        <a href="#">Shears & Scissors</a>
+        <a href="#">Pens & Kubatons</a>
+        <a href="#">Sharpeners</a>
+        <a href="#">Sheaths & Scabbards</a>
+        <a href="#">Other Gear & Accessories</a>
+      </div>
+    </div>
+    <div class="bottom-section d-flex justify-content-between d-none" id="men">
+      <div class="first-col d-flex flex-column">
+        <div class="align-self-center">
+          <p>Tops</p>
+        </div>
+        <div class="d-flex">
+          <div class="div">
+            <div class="d-flex flex-column">
+              <p>Safety Vests</p>
+              <a href="#">Jackets & Coats</a>
+              <a href="#">Vests</a>
+              <a href="#">Rain</a>
+            </div>
+            <div class="d-flex flex-column">
+              <p>Hoodies & Sweatshirts</p>
+              <a href="#">Pull Over Hoodie</a>
+              <a href="#">Full Zip Hoodie</a>
+              <a href="#">Crew Neck</a>
+            </div>
+          </div>
+          <div class="div">
+            <div class="d-flex flex-column">
+              <p>Shirts</p>
+              <a href="#">Short Sleave</a>
+              <a href="#">LOng Sleave</a>
+              <a href="#">Polos</a>
+              <a href="#">Button Down</a>
+              <a href="#">Flannal & Plaid</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="second-col d-flex flex-column">
+        <div class="d-flex flex-column">
+          <p>Bottoms</p>
+          <a href="#">Pants</a>
+          <a href="#">Shorts</a>
+          <a href="#">Sweat Pants</a>
+          <a href="#">Underwear</a>
+        </div>
+        <div class="d-flex flex-column">
+          <p>Boots & Shoes</p>
+          <a href="#">Boots</a>
+          <a href="#">Shoes</a>
+          <a href="#">Socks & Accessories</a>
+        </div>
+      </div>
+      <div class="third-col d-flex flex-column">
+        <p>Headwear</p>
+        <a href="#">Caps & Hats</a>
+        <a href="#">Masks & Balaclavas</a>
+        <a href="#">Neckties & Scarves</a>
+        <a href="#">Military Berets</a>
+        <a href="#">Bandanas</a>
+        <a href="#">Head wraps</a>
+        <a href="#">Helmets</a>
+        <a href="#">Beanies & Toques</a>
+        <a href="#">Shemagh or Keffiyeh</a>
+      </div>
+      <div class="fourth-col d-flex flex-column">
+        <p>Gun Gear</p>
+        <p>Bib Overalls & Coveralls</p>
+        <p>Thermal Base Layer</p>
+        <p>Swimwear</p>
+        <p>Gloves</p>
+        <p>Belts & Suspenders</p>
+        <p>Wallets</p>
+      </div>
+    </div>
+    <div class="bottom-section d-flex justify-content-between d-none" id="women">
+      <div class="first-col d-flex flex-column">
+        <div class="d-flex flex-column">
+          <p>Tops</p>
+          <a href="#">Shirts</a>
+          <a href="#">Jackets</a>
+        </div>
+      </div>
+      <div class="second-col d-flex flex-column">
+        <div class="d-flex flex-column">
+          <p>Bottoms</p>
+          <a href="#">Pants</a>
+          <a href="#">Shorts</a>
+          <a href="#">Skirts</a>
+        </div>
+      </div>
+      <div class="third-col d-flex flex-column">
+        <p>Swimwear</p>
+      </div>
+    </div>
+    <div class="bottom-section d-flex justify-content-between d-none" id="bags-and-packs">
+      <div class="first-col d-flex flex-column">
+        <div class="d-flex flex-column">
+          <a href="#">Messenger bags</a>
+          <a href="#">Backpacks</a>
+          <a href="#">Duffel Bags</a>
+          <a href="#">Waist & Fanny Packs</a>
+          <a href="#">Shoulder & Sling Bags</a>
+        </div>
+      </div>
+      <div class="second-col d-flex flex-column">
+        <div class="d-flex flex-column">
+          <a href="#">Cargo & Tool Bags</a>
+          <a href="#">Rolling Luggage Bags</a>
+          <a href="#">Pouches</a>
+          <a href="#">Tablet Sleeves</a>
+          <a href="#">Straps & Accessories</a>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-section d-flex justify-content-between d-none" id="camping-and-survival">
+      <div class="first-col d-flex flex-column">
+        <div class="d-flex flex-column">
+          <p>Survival Gear</p>
+          <a href="#">Bear & Pepper Spray</a>
+          <a href="#">Ammo Cans</a>
+          <a href="#">Fire Starters</a>
+          <a href="#">Rainwear</a>
+          <a href="#">Staps & Repair Kits</a>
+          <a href="#">Compasses & Signaling</a>
+        </div>
+      </div>
+      <div class="second-col d-flex flex-column">
+        <div class="d-flex flex-column">
+          <p>Camping Gear</p>
+          <a href="#">Tarps</a>
+          <a href="#">Paracord Canada</a>
+          <a href="#">First Aid Kits</a>
+          <a href="#">Gillie suits</a>
+          <a href="#">Tents & Sleeping Bags</a>
+        </div>
+      </div>
+      <div class="third-col d-flex flex-column">
+        <a href="#">Hygiene</a>
+        <a href="#">Shovels</a>
+        <a href="#">Utensils</a>
+        <a href="#">Cots & Chairs</a>
+        <a href="#">Hammocks</a>
+        <a href="#">Insect Repellent & Netting</a>
+        <a href="#">Cookware & Mess Kits</a>
+        <a href="#">Towels</a>
+        <a href="#">Pumps</a>
+        <a href="">Climbing Gear</a>
+        <a href="">Lighting</a>
+      </div>
+    </div>
+    <div class="bottom-section d-flex justify-content-between d-none" id="more">
+      <div class="first-col d-flex flex-column">
+        <div class="d-flex flex-column">
+          <p>Military Accessories</p>
+          <a href="#">Sunglasses & Goggles</a>
+          <a href="#">Binoculars & Night Vision </a>
+          <a href="#">Camo Netting</a>
+          <a href="#">Face Paint</a>
+          <a href="#">Training Manuals</a>
+          <a href="#">Locks</a>
+          <a href="#">Knee pads</a>
+          <a href="#">Tactical helmets</a>
+        </div>
+      </div>
+      <div class="second-col d-flex flex-column">
+        <div class="d-flex flex-column">
+          <p>Military Insignia</p>
+          <a href="#">Badges</a>
+          <a href="#">Stickers & Decals</a>
+          <a href="#">Patches & Ranks</a>
+          <a href="#">Dog Tags</a>
+          <a href="#">Pins</a>
+        </div>
+      </div>
+      <div class="third-col d-flex flex-column">
+        <p>Personal Accessories</p>
+        <a href="#">Key Chains</a>
+        <a href="#">Lighters</a>
+        <a href="#">Whistles</a>
+        <a href="#">Watches</a>
+        <a href="#">Flasks</a>
+        <a href="#">Rings</a>
+        <a href="#">Umbrellas</a>
+        <a href="#">Miscellaneous</a>
+      </div>
+      <div class="fourth-col d-flex flex-column">
+        <div class="d-flex flex-column">
+          <p>Kids Clothes</p>
+          <p>Tops</p>
+          <a href="#">T-Shirts</a>
+          <a href="#">Jackets</a>
+          <a href="#">Vests</a>
+        </div>
+        <div class="d-flex flex-column">
+          <p>Bottoms</p>
+          <a href="#">Pants</a>
+          <a href="#">Shorts</a>
+          <p>Coveralls</p>
+        </div>
+      </div>
+      <div class="fivth-col d-flex flex-column">
+        <p>SURPLUS</p>
+      </div>
+    </div>
+  </section>
+  <!-- Catalog popup end -->
+
+  <!-- Mobile menu and catalog start -->
+  <section class="mobile-menu inner-screen mx-auto d-flex flex-column justify-content-between gap-5 d-none d-lg-none">
+    <div class="top-menu d-flex justify-content-between">
+      <button type="button" class="cart catalog header-icons-hight" id="mobile-catalog-btn"><img src="./assets/icons/fi-rr-grid.svg" alt="catalog icon"></button>
+      <button type="button" class="user header-icons-hight "><img src="/assets/icons/fi-rr-user.png" alt="user profile"></button>
+      <button type="button" class="currency header-icons-hight "><select id="currency-type header-icons-hight">
+        <option value="usd">USD</option>
+        <option value="euro">CAD</option>
+      </select></button>
+    </div>
+    <div class="bottom-menu" id="mobile-nav-section">
+      <ul class="d-flex flex-column align-items-center p-0 gap-5">
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="mobile-catalog inner-screen mx-auto d-none">
+      <details class="main-detail" id="details1" style="width: 100%;">
+        <summary>
+          <div class="details-summary d-flex align-items-center justify-content-between">
+            <p>Guns & rifles</p>
+            <img class="summary-arrow" src="./assets/icons/arrow.png" alt="arrow">
+          </div>
+        </summary>
+        <div class="first-col d-flex flex-column px-3">
+          <h1>All Guns & rifles </h1>
+          <div class="d-flex flex-column">
+            <p>Blank Guns</p>
+            <a href="#">Blank Guns</a>
+            <a href="#">Blank Gun Magazine</a>
+          </div>
+          <div class="d-flex flex-column">
+            <p>BB Guns</p>
+            <a href="#">BB Pistols</a>
+            <a href="#">BB SMGs</a>
+            <a href="#">BB Rifies</a>
+            <a href="#">BB Magazine</a>
+          </div>
+        </div>
+        <span class="more-categories">
+          <div class="second-col d-flex flex-column px-3">
+            <div class="d-flex flex-column">
+              <p>Pellet Guns</p>
+              <a href="#">Pellet Pistols</a>
+              <a href="#">Pellet Rifies</a>
+              <a href="#">Pellet Magazines</a>
+            </div>
+            <div class="d-flex flex-column">
+              <p>Ammo & Gas</p>
+              <a href="#">Pellets</a>
+              <a href="#">Steel BBs</a>
+              <a href="#">Airsoft Ammo</a>
+              <a href="#">Speed Loaders</a>
+              <a href="#">Co2 Cartridges</a>
+              <a href="#">Green Gas</a>
+            </div>
+          </div>
+          <div class="third-col d-flex flex-column px-3">
+            <p>Airsoft Funs</p>
+            <a href="#">Airsoft Pistols</a>
+            <a href="#">Airsoft SMGs</a>
+            <a href="#">Airsoft Rifies</a>
+            <a href="#">Airsoft Magazinos</a>
+            <a href="#">Airsoft Batteries & Chargors</a>
+            <a href="#">Airsoft Masks</a>
+            <a href="#">Airsoft Launchers</a>
+            <a href="#">Airsoft Internal Parts</a>
+            <a href="#">Airsoft External Parts</a>
+          </div>
+          <div class="fourth-col d-flex flex-column px-3">
+            <p>Gun Gear</p>
+            <a href="#">Scopes</a>
+            <a href="#">Laser Pointers</a>
+            <a href="#">Rails & Mounts</a>
+            <a href="#">Slings</a>
+            <a href="#">Gun Holsters</a>
+            <a href="#">Bi-Pods</a>
+            <a href="#">Gun Mounted Flashlights</a>
+            <a href="#">Gun Sights</a>
+            <a href="#">Rigs & Carriers</a>
+          </div>
+          <div class="fivth-col d-flex flex-column px-3">
+            <p>Gun Accessories</p>
+            <a href="#">Grenades</a>
+            <a href="#">Targets</a>
+            <a href="#">Gun & Rifie Cases</a>
+            <a href="#">Grips & Foregrips</a>
+            <a href="#">Gun Oil</a>
+            <a href="#">Gillie Suits</a>
+            <a href="#">Ear Protection</a>
+            <a href="#">Gun Cleaning Kits</a>
+            <a href="#">Shooting Mats</a>
+            <a href="#">Air Bows</a>
+            <a href="#">Other</a>
+          </div>
+          <span class="show-less-categories-btn px-3">Show less</span>
+        </span>
+        <span class="show-more-categories-btn px-3">Show more</span>
+      </details>
+      <details class="main-detail" id="details1" style="width: 100%;">
+        <summary>
+          <div class="details-summary d-flex align-items-center justify-content-between">
+            <p>Knives & tools</p>
+            <img class="summary-arrow" src="./assets/icons/arrow.png" alt="arrow">
+          </div>
+        </summary>
+        <div class="first-col d-flex flex-column px-3">
+          <div class="d-flex flex-column">
+            <a href="#">Folding Knives</a>
+            <a href="#">Fixed Blade Knives</a>
+            <a href="#">Throwing Knives</a>
+          </div>
+        </div>
+        <span class="more-categories">
+          <div class="d-flex flex-column px-3">
+            <a href="#">Batons & Nightsticks</a>
+            <a href="#">Swords</a>
+            <a href="#">Machetes</a>
+            <a href="#">Sticks & Canes</a>
+            <a href="#">Axes & Tomahawks</a>
+          </div>
+          <div class="second-col d-flex flex-column px-3">
+            <div class="d-flex flex-column">
+              <a href="#">PButterfly & OTF Knives</a>
+              <a href="#">Training Swords</a>
+              <a href="#">Spears</a>
+            </div>
+          </div>
+          <div class="d-flex flex-column px-3">
+            <a href="#">Multi-tools</a>
+            <a href="#">Flashlights</a>
+            <a href="#">Handcuffs & Restraints</a>
+          </div>
+          <div class="third-col d-flex flex-column px-3">
+            <a href="#">Shears & Scissors</a>
+            <a href="#">Pens & Kubatons</a>
+            <a href="#">Sharpeners</a>
+            <a href="#">Sheaths & Scabbards</a>
+            <a href="#">Other Gear & Accessories</a>
+          </div>
+          <span class="show-less-categories-btn">Show less</span>  
+        </span>
+        <span class="show-more-categories-btn px-3">Show more</span>
+      </details>
+      <details class="main-detail" id="details1" style="width: 100%;">
+        <summary>
+          <div class="details-summary d-flex align-items-center justify-content-between">
+            <p>Men</p>
+            <img class="summary-arrow" src="./assets/icons/arrow.png" alt="arrow">
+          </div>
+        </summary>
+        <div class="first-col d-flex flex-column px-3">
+          <div class="align-self-center">
+            <p>Tops</p>
+          </div>
+          <div class="d-flex">
+            <div class="div">
+              <div class="d-flex flex-column">
+                <p>Safety Vests</p>
+                <a href="#">Jackets & Coats</a>
+                <a href="#">Vests</a>
+                <a href="#">Rain</a>
+              </div>
+              <div class="d-flex flex-column">
+                <p>Hoodies & Sweatshirts</p>
+                <a href="#">Pull Over Hoodie</a>
+                <a href="#">Full Zip Hoodie</a>
+                <a href="#">Crew Neck</a>
+              </div>
+            </div>
+            <div class="div">
+              <div class="d-flex flex-column">
+                <p>Shirts</p>
+                <a href="#">Short Sleave</a>
+                <a href="#">LOng Sleave</a>
+                <a href="#">Polos</a>
+                <a href="#">Button Down</a>
+                <a href="#">Flannal & Plaid</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="second-col d-flex flex-column px-3">
+          <div class="d-flex flex-column">
+            <p>Bottoms</p>
+            <a href="#">Pants</a>
+            <a href="#">Shorts</a>
+            <a href="#">Sweat Pants</a>
+            <a href="#">Underwear</a>
+          </div>
+          <div class="d-flex flex-column">
+            <p>Boots & Shoes</p>
+            <a href="#">Boots</a>
+            <a href="#">Shoes</a>
+            <a href="#">Socks & Accessories</a>
+          </div>
+        </div>
+        <div class="third-col d-flex flex-column px-3">
+          <p>Headwear</p>
+          <a href="#">Caps & Hats</a>
+          <a href="#">Masks & Balaclavas</a>
+          <a href="#">Neckties & Scarves</a>
+          <a href="#">Military Berets</a>
+          <a href="#">Bandanas</a>
+          <a href="#">Head wraps</a>
+          <a href="#">Helmets</a>
+          <a href="#">Beanies & Toques</a>
+          <a href="#">Shemagh or Keffiyeh</a>
+        </div>
+        <div class="fourth-col d-flex flex-column px-3">
+          <p>Gun Gear</p>
+          <p>Bib Overalls & Coveralls</p>
+          <p>Thermal Base Layer</p>
+          <p>Swimwear</p>
+          <p>Gloves</p>
+          <p>Belts & Suspenders</p>
+          <p>Wallets</p>
+        </div>
+        <span class="show-more-categories-btn px-3">Show more</span>
+      </details>
+      <details class="main-detail" id="details1" style="width: 100%;">
+        <summary>
+          <div class="details-summary d-flex align-items-center justify-content-between">
+            <p>Women</p>
+            <img class="summary-arrow" src="./assets/icons/arrow.png" alt="arrow">
+          </div>
+        </summary>
+        <div class="first-col d-flex flex-column px-3">
+          <div class="d-flex flex-column">
+            <p>Tops</p>
+            <a href="#">Shirts</a>
+            <a href="#">Jackets</a>
+          </div>
+        </div>
+        <div class="second-col d-flex flex-column px-3">
+          <div class="d-flex flex-column">
+            <p>Bottoms</p>
+            <a href="#">Pants</a>
+            <a href="#">Shorts</a>
+            <a href="#">Skirts</a>
+          </div>
+        </div>
+        <div class="third-col d-flex flex-column px-3">
+          <p>Swimwear</p>
+        </div>
+        <span class="show-more-categories-btn px-3">Show more</span>
+      </details>
+      <details class="main-detail" id="details1" style="width: 100%;">
+        <summary>
+          <div class="details-summary d-flex align-items-center justify-content-between">
+            <p>Bags & packs</p>
+            <img class="summary-arrow" src="./assets/icons/arrow.png" alt="arrow">
+          </div>
+        </summary>
+        <div class="first-col d-flex flex-column px-3">
+          <div class="d-flex flex-column">
+            <a href="#">Messenger bags</a>
+            <a href="#">Backpacks</a>
+            <a href="#">Duffel Bags</a>
+            <a href="#">Waist & Fanny Packs</a>
+            <a href="#">Shoulder & Sling Bags</a>
+          </div>
+        </div>
+        <div class="second-col d-flex flex-column px-3">
+          <div class="d-flex flex-column">
+            <a href="#">Cargo & Tool Bags</a>
+            <a href="#">Rolling Luggage Bags</a>
+            <a href="#">Pouches</a>
+            <a href="#">Tablet Sleeves</a>
+            <a href="#">Straps & Accessories</a>
+          </div>
+        </div>
+        <span class="show-more-categories-btn px-3">Show more</span>
+      </details>
+      <details class="main-detail" id="details1" style="width: 100%;">
+        <summary>
+          <div class="details-summary d-flex align-items-center justify-content-between">
+            <p>Camping & survival</p>
+            <img class="summary-arrow" src="./assets/icons/arrow.png" alt="arrow">
+          </div>
+        </summary>
+        <div class="first-col d-flex flex-column px-3">
+          <div class="d-flex flex-column">
+            <p>Survival Gear</p>
+            <a href="#">Bear & Pepper Spray</a>
+            <a href="#">Ammo Cans</a>
+            <a href="#">Fire Starters</a>
+            <a href="#">Rainwear</a>
+            <a href="#">Staps & Repair Kits</a>
+            <a href="#">Compasses & Signaling</a>
+          </div>
+        </div>
+        <div class="second-col d-flex flex-column px-3">
+          <div class="d-flex flex-column">
+            <p>Camping Gear</p>
+            <a href="#">Tarps</a>
+            <a href="#">Paracord Canada</a>
+            <a href="#">First Aid Kits</a>
+            <a href="#">Gillie suits</a>
+            <a href="#">Tents & Sleeping Bags</a>
+          </div>
+        </div>
+        <div class="third-col d-flex flex-column px-3">
+          <a href="#">Hygiene</a>
+          <a href="#">Shovels</a>
+          <a href="#">Utensils</a>
+          <a href="#">Cots & Chairs</a>
+          <a href="#">Hammocks</a>
+          <a href="#">Insect Repellent & Netting</a>
+          <a href="#">Cookware & Mess Kits</a>
+          <a href="#">Towels</a>
+          <a href="#">Pumps</a>
+          <a href="">Climbing Gear</a>
+          <a href="">Lighting</a>
+        </div>
+        <span class="show-more-categories-btn px-3">Show more</span>
+      </details>
+      <details class="main-detail" id="details1" style="width: 100%;">
+        <summary>
+          <div class="details-summary d-flex align-items-center justify-content-between">
+            <p>More</p>
+            <img class="summary-arrow" src="./assets/icons/arrow.png" alt="arrow">
+          </div>
+        </summary>
+        <div class="first-col d-flex flex-column px-3">
+          <div class="d-flex flex-column">
+            <p>Military Accessories</p>
+            <a href="#">Sunglasses & Goggles</a>
+            <a href="#">Binoculars & Night Vision </a>
+            <a href="#">Camo Netting</a>
+            <a href="#">Face Paint</a>
+            <a href="#">Training Manuals</a>
+            <a href="#">Locks</a>
+            <a href="#">Knee pads</a>
+            <a href="#">Tactical helmets</a>
+          </div>
+        </div>
+        <div class="second-col d-flex flex-column px-3">
+          <div class="d-flex flex-column">
+            <p>Military Insignia</p>
+            <a href="#">Badges</a>
+            <a href="#">Stickers & Decals</a>
+            <a href="#">Patches & Ranks</a>
+            <a href="#">Dog Tags</a>
+            <a href="#">Pins</a>
+          </div>
+        </div>
+        <div class="third-col d-flex flex-column px-3">
+          <p>Personal Accessories</p>
+          <a href="#">Key Chains</a>
+          <a href="#">Lighters</a>
+          <a href="#">Whistles</a>
+          <a href="#">Watches</a>
+          <a href="#">Flasks</a>
+          <a href="#">Rings</a>
+          <a href="#">Umbrellas</a>
+          <a href="#">Miscellaneous</a>
+        </div>
+        <div class="fourth-col d-flex flex-column px-3">
+          <div class="d-flex flex-column">
+            <p>Kids Clothes</p>
+            <p>Tops</p>
+            <a href="#">T-Shirts</a>
+            <a href="#">Jackets</a>
+            <a href="#">Vests</a>
+          </div>
+          <div class="d-flex flex-column">
+            <p>Bottoms</p>
+            <a href="#">Pants</a>
+            <a href="#">Shorts</a>
+            <p>Coveralls</p>
+          </div>
+        </div>
+        <div class="fivth-col d-flex flex-column px-3">
+          <p>SURPLUS</p>
+        </div>
+        <span class="show-more-categories-btn px-3">Show more</span>
+      </details>
+    </div>
+  </section>
+  <!-- Mobile menu and catalog end -->
+
+  <!-- Product main section strat here -->
+  <main class="product-main-con inner-screen mx-auto">
+    <!--Path container start-->
+    <div class="path-con d-flex align-items-center gap-2">
+      <a href="#">Home  ></a>
+      <a href="#">Catalog  ></a>
+      <a href="#">Guns & rifles  ></a>
+      <a href="#">Raven X Assault Backpack XL</a>
+    </div>
+    <!--Path container end-->
+
+    <!-- Product detail container start -->
+    <div class="product-detail-container w-100 d-flex flex-column flex-md-row gap-5">
+      <div class="product-images-container w-100 w-sm-50 d-flex flex-column gap-2">
+        <div class="row main-img">
+            <div class="col-12">
+                <img src="./assets/img/product/Rectangle 1602.png" alt="product image" class="img-fluid w-100" />
+            </div>
+        </div>
+        <div class="row product-options-list d-flex flex-wrap">
+            <div class="col">
+                <img src="./assets/img/product/Rectangle 1604.png" alt="product image" class="img-fluid w-100" />
+            </div>
+            <div class="col">
+                <img src="./assets/img/product/Rectangle 1603.png" alt="product image" class="img-fluid w-100"/>
+            </div>
+            <div class="col">
+                <img src="./assets/img/product/Rectangle 1605.png" alt="product image" class="img-fluid w-100" />
+            </div>
+            <div class="col">
+                <img src="./assets/img/product/Rectangle 1606.png" alt="product image" class="img-fluid w-100" />
+            </div>
+            <div class="col">
+                <img src="./assets/img/product/Rectangle 1607.png" alt="product image" class="img-fluid w-100" />
+            </div>
+        </div>
+      </div>    
+    
+      <div class="product-specification-container w-100 w-sm-50 d-flex flex-column align-items-between">
+        <div class="spec-tags d-flex d-flex justify-content-between">
+          <p>Raven X</p>
+          <p>SKU: RVX1020BLK</p>
+        </div>
+        <div class="spcifications w-100 h-100 d-flex flex-column align-items-between">
+          <p class="product-name pt-3">Raven X Assault Backpack XL</p>
+          <p class="price">$74.99 <span>CAD</span></p>
+          <a class="d-flex gap-2 color-options py-2" href="#">Color <li>black</li></a>
+          <div class="d-flex gap-2 py-2">
+            <img src="./assets/img/product/Group 603.png" alt="product color">
+            <img src="./assets/img/product/Group 48097779.png" alt="product color">
+            <img src="./assets/img/product/Group 48097780.png" alt="product color">
+            <img src="./assets/img/product/Group 48097781.png" alt="product color">
+            <img src="./assets/img/product/Group 48097782.png" alt="product color">
+          </div>
+          <a class="d-flex gap-2 size-options py-2" href="#">Size <li>XSmall</li></a>
+          <div class="product-size d-flex flex-wrap gap-1 py-2">
+            <button type="button" href="#">Small</button>
+            <button type="button" href="#">Medium</button>
+            <button type="button" href="#">Large</button>
+            <button type="button" href="#">XLarge</button>
+            <button type="button" href="#">2XLarge</button>
+            <button type="button" href="#">3XLarge</button>
+          </div>
+          <p class="py-2">Size guide</p>
+        </div>
+        <div class="d-flex order-product gap-1">
+          <button type="button">Buy</button>
+          <input type="number" id="quantity" name="quantity" min="1" max="10" step="1" value="1">
+        </div>
+      </div>
+    </div>
+    <!-- Product detail container end -->
+
+    <!-- More product detail start -->
+    <div class="more-product-detail w-100 d-flex justify-content-end my-5">
+      <div class="right-container w-50">
+        <div class="navs d-flex gap-5">
+          <a id="details-link-btn" href="">Details</a>
+          <a id="specializations-link-btn" href="">Specialization</a>
+          <a id="addto-link-btn" href="">Add to</a>
+        </div>
+        <div class="details-part">
+          <p>You can literally carry the world on your shoulders with this colossal tactical pack from Raven X. This backpack has a 3038 in³ capacity and enough storage space to fit anything you could need for extended hikes, camping trips, or field operations. In addition to the main compartment, there are two side pockets, a lower front pocket, and a back slot for hydration bladders. Overall dimensions are 22" x 17" x 11".</p>
+          <p>Why choose this backpack?</p>
+          <ul>
+            <li>Foam back panels and contoured cushioned straps</li>
+            <li>Multiple storage compartments with inner pockets and document organizers</li>
+            <li>Inner buckles and straps to secure gear in place</li>
+            <li>Back compartment can fit two 3L hydration bladders</li>
+            <li>Compression straps keeps your load compact</li>
+            <li>MOLLE webbing on exterior allows for additional pouch attachments</li>
+          </ul>
+        </div>
+        <div class="specializations-part d-none">
+          <p>Gun Caliber:<span>6 mm (24 cal)</span></p>
+          <p>Ammo Type:<span>Airsoft</span></p>
+          <p>Gun Action: <span>Semi-Automatic</span></p>
+          <p>FPS:<span>350 to 400</span></p>
+          <p>Power Source:<span>Co2</span></p>
+          <p>Gun Material:<span>Full Metal</span></p>
+          <p>Power Source: <span>Co2</span></p>
+          <p>Body Type:<span>1911</span></p>
+          <p>Gun Blowback:<span>Blowback</span></p>
+          <p>Magazine Capacity:<span>14</span></p>
+        </div>
+        <div class="add-to-part d-none d-flex flex-column gap-4">
+          <div class="first-row d-flex">
+            <div class="d-flex align-items-center gap-2">
+              <img class="add-to-img p-4" src="./assets/img/product/image 5.png" alt="product img">
+              <p class="addto-product-name">Ncstar 3W 150 Lumen Led Flashlight Qr With Strobe</p>
+            </div>
+            <div class="d-flex flex-column gap-2">
+              <i class="align-self-end"><img src="./assets/icons/product/Frame 48097799 (1).png" alt="check"></i>
+              <p class="addto-price d-flex">244.99 <span class="align-self-end">CAD</span></p>
+            </div>
+          </div>
+          <div class="second-row d-flex">
+            <div class="d-flex align-items-center gap-2">
+              <img class="add-to-img p-4" src="./assets/img/product/image 5.png" alt="product img">
+              <p class="addto-product-name">Ncstar 3W 150 Lumen Led Flashlight Qr With Strobe</p>
+            </div>
+            <div class="d-flex flex-column gap-2">
+              <i class="align-self-end"><img src="./assets/icons/product/Frame 48097801.png" alt="check"></i>
+              <p class="addto-price d-flex">244.99 <span class="align-self-end">CAD</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- More product detail end -->
+  </main>
+   <!-- Product main section end here -->
+
+  <!-- Footer start -->
+  <footer class="inner-screen mx-auto d-flex flex-column align-items-center justify-content-between rounded-4 p-4 mb-4">
+    <div class="left-footer d-flex gap-4 p-2">
+      <div class="footer-logo-con align-self-center">
+        <img src="./assets/img/home/logo.svg" alt="logo">
+      </div>
+      <div class="footer-links align-self-center">
+        <ul class="d-flex flex-column gap-1 align-self-center">
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="policies align-self-center">
+        <ul class="d-flex flex-column gap-1">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Rofund Policy</a></li>
+          <li><a href="#">Termes of Service</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-social-links d-flex align-items-center justify-content-center gap-5">
+        <img class="devider" src="./assets/icons/driver.svg" alt="vector-devider">
+        <ul class="">
+          <li><a href="#"><img src="./assets/icons/facebook 2.svg" alt="youtube"></a></li>
+          <li><a href="#"><img src="./assets/icons/facebook 1.svg" alt="facebook"></a></li>
+          <li><a href="#"><img src="./assets/icons/instagram 1.svg" alt="instagram"></a></li>
+        </ul>
+        <img class="devider" src="./assets/icons/driver.svg" alt="vector-devider">
+      </div>
+      <div class="location-and-signup d-flex">
+        <div class="locations">
+          <p class="location">Location</p>
+          <address class="address">1458 East Broadway St. Vancouver, BC V5N 1V6 Canada</address>
+        </div>
+        <div class="signup-section">
+          <p class="signup-text">Sign up for the newsletter</p>
+          <input class="p-2 rounded-4" type="text" placeholder="Enter our email">
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex justify-content-between gap-5">
+      <img class="footer-border" src="./assets/img/home/footerborder.svg" alt="footer-border">
+      <p class="copy-right align-self-end d-none d-md-block">Gorilla Surplus © 2023</p>
+    </div>
+  </footer>
+  <div class="mobile-copy-right d-md-none d-lg-none pb-3">
+    <p>Gorilla Surplus © 2023 All rights reserved Cookies</p>
+  </div>
+  <!-- Footer end -->
+
+</body>
+<script type="module" src="./assets/script/home/popup.js"></script>
+<script type="module" src="./assets/script/home/mobileMenu.js"></script>
+<script type="module" src="./assets/script/product/product.js"></script>
+</html>

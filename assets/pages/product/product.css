@@ -1,0 +1,173 @@
+.path-con {
+  height: 80px;
+}
+
+.path-con a {
+  text-decoration: none;
+  color: #383634;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+.product-specification-container .spcifications {
+  width: 70%;
+}
+
+.spec-tags {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.spcifications .product-name {
+  font-family: Inter;
+  font-size: 3vw;
+  font-weight: 700;
+  color: #383634;
+  padding: 0;
+  margin: 0;
+}
+
+.spcifications .price {
+  font-family: Oswald;
+  font-size: 5vw;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+.spcifications .price  span{
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 700;
+  color: #7E7F81;
+  ;
+}
+
+.color-options, .size-options {
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: Inter;
+  font-size: 16px;
+}
+
+.color-options li, .size-options li {
+  font-weight: 300;
+  font-family: Inter;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.product-size button {
+  width: 6.5vw;
+  border: 1px solid #383634;
+  color: #383634;
+  font-size: 1vw;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.product-size button:hover {
+  color: #fff;
+}
+
+.order-product button {
+  width: 35vw;
+  height: 78px;
+  top: 902px;
+  left: 736px;
+  padding: 27px, 67px;
+  border-radius: 10px;
+  border: 1px solid #383634;
+  background-color: #383634;
+  color: #fff;
+}
+
+.order-product button:hover {
+  background-color: #7E7F81;
+}
+
+.order-product input {
+  width: 10vw;
+  height: 78px;
+  top: 902px;
+  left: 1260px;
+  padding: 27px, 67px;
+  border-radius: 10px;
+  border: 1px solid #383634;
+}
+
+.more-product-detail {
+  padding-left: 40px;
+}
+
+.navs a {
+  text-decoration: none;
+  font-family: Inter;
+  font-size: 2.2vw;
+  font-weight: 700;
+  line-height: 45px;
+  color: gray;
+}
+
+.navs a:focus {
+  color: #383634;
+}
+
+.details-part ul li {
+  list-style-type: inherit;
+}
+
+.specializations-part p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.specializations-part p span{
+  width: 70%;
+  color: #000;
+  font-weight: 700;
+}
+
+.add-to-img {
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.addto-product-name {
+  font-family: Oswald;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.addto-price {
+  font-family: Oswald;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.addto-price span{
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 700;
+  padding-bottom: 5px;
+  color: #7E7F81;
+}
+
+@media screen and (max-width: 768px) {
+
+  .more-product-detail {
+    padding-left: 0;
+  }
+
+  .right-container {
+    width: 100% !important;
+  }
+
+  /* .product-specification-container .spcifications {
+    width: 100%;
+  } */
+}
