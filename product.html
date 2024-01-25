@@ -766,7 +766,7 @@
     <!--Path container end-->
 
     <!-- Product detail container start -->
-    <div class="product-detail-container w-100 d-flex flex-column flex-md-row gap-5">
+    <div class="product-detail-container w-100 d-flex flex-column flex-md-row gap-3 gap-md-5">
       <div class="product-images-container w-100 w-sm-50 d-flex flex-column gap-2">
         <div class="row main-img">
             <div class="col-12">
@@ -793,20 +793,20 @@
       </div>    
     
       <div class="product-specification-container w-100 w-sm-50 d-flex flex-column align-items-between">
-        <div class="spec-tags d-flex d-flex justify-content-between">
+        <div class="spec-tags d-none d-md-flex d-flex justify-content-between">
           <p>Raven X</p>
           <p>SKU: RVX1020BLK</p>
         </div>
-        <div class="spcifications w-100 h-100 d-flex flex-column align-items-between">
+        <div class="spcifications h-100 d-flex flex-column align-items-between">
           <p class="product-name pt-3">Raven X Assault Backpack XL</p>
           <p class="price">$74.99 <span>CAD</span></p>
           <a class="d-flex gap-2 color-options py-2" href="#">Color <li>black</li></a>
-          <div class="d-flex gap-2 py-2">
-            <img src="./assets/img/product/Group 603.png" alt="product color">
-            <img src="./assets/img/product/Group 48097779.png" alt="product color">
-            <img src="./assets/img/product/Group 48097780.png" alt="product color">
-            <img src="./assets/img/product/Group 48097781.png" alt="product color">
-            <img src="./assets/img/product/Group 48097782.png" alt="product color">
+          <div class="product-color-img d-flex gap-2 py-2">
+            <img src="./assets/img/product/Group 603.png" alt="product color black">
+            <img src="./assets/img/product/Group 48097779.png" alt="product color army">
+            <img src="./assets/img/product/Group 48097780.png" alt="product color gray">
+            <img src="./assets/img/product/Group 48097781.png" alt="product color armygreen">
+            <img src="./assets/img/product/Group 48097782.png" alt="product color lightgray">
           </div>
           <a class="d-flex gap-2 size-options py-2" href="#">Size <li>XSmall</li></a>
           <div class="product-size d-flex flex-wrap gap-1 py-2">
@@ -819,7 +819,7 @@
           </div>
           <p class="py-2">Size guide</p>
         </div>
-        <div class="d-flex order-product gap-1">
+        <div class="d-flex flex-column flex-md-row order-product gap-1">
           <button type="button">Buy</button>
           <input type="number" id="quantity" name="quantity" min="1" max="10" step="1" value="1">
         </div>
@@ -830,7 +830,7 @@
     <!-- More product detail start -->
     <div class="more-product-detail w-100 d-flex justify-content-end my-5">
       <div class="right-container w-50">
-        <div class="navs d-flex gap-5">
+        <div class="navs d-flex gap-5 pb-3">
           <a id="details-link-btn" href="">Details</a>
           <a id="specializations-link-btn" href="">Specialization</a>
           <a id="addto-link-btn" href="">Add to</a>
