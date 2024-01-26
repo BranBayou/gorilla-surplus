@@ -7,28 +7,27 @@ const overlay = document.querySelector('.overlay');
 let isMouseOverButton = false;
 let isMouseOverPopup = false;
 
-catalogBtn.addEventListener('mouseenter', () => {
+catalogBtn.addEventListener('mouseover', () => {
   isMouseOverButton = true;
   showPopup();
 });
 
-catalogBtn.addEventListener('click', () => {
-  isMouseOverButton = true;
-  showPopup();
-});
+// catalogBtn.addEventListener('click', () => {
+//   isMouseOverButton = true;
+//   showPopup();
+// });
 
-
-catalogBtn.addEventListener('mouseleave', () => {
+catalogBtn.addEventListener('mouseout', () => {
   isMouseOverButton = false;
   hidePopup();
 });
 
-popupScreen.addEventListener('mouseenter', () => {
+popupScreen.addEventListener('mouseover', () => {
   isMouseOverPopup = true;
   showPopup();
 });
 
-popupScreen.addEventListener('mouseleave', () => {
+popupScreen.addEventListener('mouseout', () => {
   isMouseOverPopup = false;
   hidePopup();
 });
@@ -46,6 +45,7 @@ function hidePopup() {
     overlay.classList.add('d-none');
   }
 }
+
 
 /* Catalog sub popup for every button hover */
 

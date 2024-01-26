@@ -32,3 +32,19 @@ viewMoreCardsBtn.addEventListener('click', () => {
     product.classList.remove('d-none');
   })
 });
+
+const genderList = document.querySelector('.gender-filter-btns');
+const plusIcon = document.querySelector('.plus-icon');
+const minusIcon = document.querySelector('.minus-icon');
+
+plusIcon.addEventListener('click', () => {
+  genderList.classList.remove('d-none');
+  plusIcon.classList.add('d-none');
+  minusIcon.classList.remove('d-none');
+});
+
+minusIcon.addEventListener('click', () => {
+  genderList.classList.add('d-none');
+  plusIcon.classList.remove('d-none');
+  minusIcon.classList.add('d-none');
+});

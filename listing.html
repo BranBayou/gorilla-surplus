@@ -15,9 +15,9 @@
   <link rel="stylesheet" href="./assets/pages/home/mobile-menu.css">
   <link rel="stylesheet" href="./assets/pages/listing/listing.css">
 </head>
-<body class="position-relative">
+<body class="">
   <!-- Header start here -->
-  <header class="inner-screen mx-auto d-flex justify-content-between align-items-center">
+  <header class="position-relative inner-screen mx-auto d-flex justify-content-between align-items-center">
     <div class="left-section d-flex gap-2">
       <a href="index.html"><img class="bg-dark logo header-icons-hight" src="./assets/icons/logo.png" alt="logo"></a>
       <button type="button" class="cart header-icons-hight d-lg-none" id="md-cart"><img src="/assets/icons/fi-rr-shopping-cart.png" alt=""></button>
@@ -770,38 +770,51 @@
       <button class="sort-btn header-icons-hight" type="button">Sort by: Featured</button>
     </div>
     <div class="new-arrival-cards d-flex flex-wrap justify-content-center rounded-4 h-auto w-100 overflow-y-hidden">
-      <div class="filter-section d-none card p-3 h-100">
+      <div class="filter-section d-none card p-3">
         <div class="category-filter d-flex justify-content-between">
           <p>Category</p>
-          <i>-</i>
+          <i><img src="./assets/icons/listing/fi-rr-minus-small.png" alt="minus"></i>
         </div>
-        <div class="gender-filter d-flex justify-content-between">
-          <p>Gender</p>
-          <i>-</i>
+        <div class="gender-filter d-flex flex-column justify-content-between">
+          <div class="d-flex justify-content-between">
+            <p>Gender</p>
+            <div class="">
+              <i><img class="minus-icon d-none" src="./assets/icons/listing/fi-rr-minus-small.png" alt="minus"></i>
+            <i><img class="plus-icon" src="./assets/icons/listing/fi-rr-plus-small.png" alt="plus"></i>
+            </div>
+          </div>
+          <div class="gender-filter-btns d-none d-flex flex-wrap gap-2">
+            <button class="header-icons-hight" type="button" href="#">All</button>
+            <button class="header-icons-hight" type="button" href="#">Men</button>
+            <button class="header-icons-hight" type="button" href="#">Women</button>
+            <button class="header-icons-hight" type="button" href="#">Kids</button>
+            <button class="header-icons-hight" type="button" href="#">Girls</button>
+            <button class="header-icons-hight" type="button" href="#">Unisex</button>
+          </div>
         </div>
         <div class="brand-filter d-flex justify-content-between">
-          <p>Gender</p>
-          <i>+</i>
+          <p>Brand</p>
+          <i><img src="./assets/icons/listing/fi-rr-plus-small.png" alt="minus"></i>
         </div>
         <div class="type-filter  d-flex justify-content-between">
           <p>Type</p>
-          <i>+</i>
+          <i><img src="./assets/icons/listing/fi-rr-plus-small.png" alt="minus"></i>
         </div>
         <div class="style-filter d-flex justify-content-between">
           <p>Style</p>
-          <i>+</i>
+          <i><img src="./assets/icons/listing/fi-rr-plus-small.png" alt="minus"></i>
         </div>
         <div class="size-filter d-flex justify-content-between">
           <p>size</p>
-          <i>+</i>
+          <i><img src="./assets/icons/listing/fi-rr-plus-small.png" alt="minus"></i>
         </div>
         <div class="age-filter d-flex justify-content-between">
           <p>Age</p>
-          <i>+</i>
+          <i><img src="./assets/icons/listing/fi-rr-plus-small.png" alt="minus"></i>
         </div>
         <div class="price-filter d-flex justify-content-between">
           <p>Price</p>
-          <i>+</i>
+          <i><img src="./assets/icons/listing/fi-rr-plus-small.png" alt="minus"></i>
         </div>
         <div class="clear-filter">
           <button class="clear-filter-btn header-icons-hight" type="button">Clear filters</button>

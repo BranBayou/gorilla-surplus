@@ -115,6 +115,11 @@ header {
   border: none;
 }
 
+.currency:hover select {
+  background-color: #383634;
+  color: #fff;
+}
+
 /* Main section style */
 
 .main-section {
