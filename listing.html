@@ -769,8 +769,8 @@
       <button class="filter-btn header-icons-hight" type="button">Open Filter</button>
       <button class="sort-btn header-icons-hight" type="button">Sort by: Featured</button>
     </div>
-    <div class="new-arrival-cards d-flex flex-wrap justify-content-center rounded-4 h-auto w-100 overflow-y-hidden">
-      <div class="filter-section d-none card p-3">
+    <div class="filter-and-filtered-cards d-flex flex-column flex-md-row">
+      <div class="filter-section d-none p-3">
         <div class="category-filter d-flex justify-content-between">
           <p>Category</p>
           <i><img src="./assets/icons/listing/fi-rr-minus-small.png" alt="minus"></i>
@@ -820,231 +820,233 @@
           <button class="clear-filter-btn header-icons-hight" type="button">Clear filters</button>
         </div>
       </div>
-      <div class="card p-3">
-        <span class="discount d-flex">
-          <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
-          <p>-50%</p>
-        </span>
-        <div class="product-image-and-title d-flex flex-column">
-          <img src="./assets/img/home/image (1).png" class="product-image align-self-center" alt="product-image">
-          <h5 class="card-title">Ncstar 3W 150 Lumen Led Flashlig...</h5>
-        </div>
-        <div class=" d-flex justify-content-between align-items-end pt-3">
-          <div class="div">
-            <p class="discouted-price m-0 p-0">99.99</p>
-            <h4 class="price-now">49.99 <span>CAD</span></h4>
+      <div class="filtered-cards d-flex flex-wrap justify-content-center gap-1">
+        <div class="card p-3">
+          <span class="discount d-flex">
+            <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
+            <p>-50%</p>
+          </span>
+          <div class="product-image-and-title d-flex flex-column">
+            <img src="./assets/img/home/image (1).png" class="product-image align-self-center" alt="product-image">
+            <h5 class="card-title">Ncstar 3W 150 Lumen Led Flashlig...</h5>
           </div>
-          <div class="div align-self-center">
-            <a href="#" class="btn"><img src="./assets/icons/fi-rr-shopping-cart.svg" alt="cart"></a>
-          </div>
-        </div>
-      </div>
-      <div class="card p-3">
-        <div class="discount d-flex">
-          <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
-          <p>-50%</p>
-        </div>
-        <div class="product-image-and-title d-flex flex-column">
-          <img src="./assets/img/home/image 5.png" class="product-image align-self-center" alt="product-image">
-          <h5 class="card-title">Ncstar 3W 150 Lumen Led Flashlig...</h5>
-        </div>
-        <div class="d-flex justify-content-between align-items-end pt-3">
-          <div class="div">
-            <p class="discouted-price m-0 p-0">99.99</p>
-            <h4 class="price-now">49.99 <span>CAD</span></h4>
-          </div>
-          <div class="div align-self-center">
-            <a href="#" class="btn"><img src="./assets/icons/fi-rr-shopping-cart.svg" alt="cart"></a>
+          <div class=" d-flex justify-content-between align-items-end pt-3">
+            <div class="div">
+              <p class="discouted-price m-0 p-0">99.99</p>
+              <h4 class="price-now">49.99 <span>CAD</span></h4>
+            </div>
+            <div class="div align-self-center">
+              <a href="#" class="btn"><img src="./assets/icons/fi-rr-shopping-cart.svg" alt="cart"></a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card p-3">
-        <div class="discount d-flex">
-          <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
-          <p>-50%</p>
-        </div>
-        <div class="product-image-and-title d-flex flex-column">
-          <img src="./assets/img/home/image 5 (1).png" class="product-image align-self-center" alt="product-image">
-          <h5 class="card-title">Ncstar 3W 150 Lumen Led Flashlig...</h5>
-        </div>
-        <div class="d-flex justify-content-between align-items-end pt-3">
-          <div class="div">
-            <p class="discouted-price m-0 p-0">99.99</p>
-            <h4 class="price-now">49.99 <span>CAD</span></h4>
+        <div class="card p-3">
+          <div class="discount d-flex">
+            <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
+            <p>-50%</p>
           </div>
-          <div class="div align-self-center">
-            <a href="#" class="btn"><img src="./assets/icons/fi-rr-shopping-cart.svg" alt="cart"></a>
+          <div class="product-image-and-title d-flex flex-column">
+            <img src="./assets/img/home/image 5.png" class="product-image align-self-center" alt="product-image">
+            <h5 class="card-title">Ncstar 3W 150 Lumen Led Flashlig...</h5>
           </div>
-        </div>
-      </div>
-      <div class="card p-3">
-        <div class="discount d-flex">
-          <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
-          <p>-50%</p>
-        </div>
-        <div class="product-image-and-title d-flex flex-column">
-          <img src="./assets/img/home/image 5 (2).png" class="product-image align-self-center" alt="product-image">
-          <h5 class="card-title">Ncstar 3W 150 Lumen Led Flashlig...</h5>
-        </div>
-        <div class="d-flex justify-content-between align-items-end pt-3">
-          <div class="div">
-            <p class="discouted-price m-0 p-0">99.99</p>
-            <h4 class="price-now">49.99 <span>CAD</span></h4>
-          </div>
-          <div class="div align-self-center">
-            <a href="#" class="btn"><img src="./assets/icons/fi-rr-shopping-cart.svg" alt="cart"></a>
+          <div class="d-flex justify-content-between align-items-end pt-3">
+            <div class="div">
+              <p class="discouted-price m-0 p-0">99.99</p>
+              <h4 class="price-now">49.99 <span>CAD</span></h4>
+            </div>
+            <div class="div align-self-center">
+              <a href="#" class="btn"><img src="./assets/icons/fi-rr-shopping-cart.svg" alt="cart"></a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card p-3">
-        <div class="discount d-flex">
-          <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
-          <p>-50%</p>
-        </div>
-        <div class="product-image-and-title d-flex flex-column">
-          <img src="./assets/img/home/image 5 (2).png" class="product-image align-self-center" alt="product-image">
-          <h5 class="card-title">Ncstar 3W 150 Lumen Led Flashlig...</h5>
-        </div>
-        <div class="d-flex justify-content-between align-items-end pt-3">
-          <div class="div">
-            <p class="discouted-price m-0 p-0">99.99</p>
-            <h4 class="price-now">49.99 <span>CAD</span></h4>
+        <div class="card p-3">
+          <div class="discount d-flex">
+            <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
+            <p>-50%</p>
           </div>
-          <div class="div align-self-center">
-            <a href="#" class="btn"><img src="./assets/icons/fi-rr-shopping-cart.svg" alt="cart"></a>
+          <div class="product-image-and-title d-flex flex-column">
+            <img src="./assets/img/home/image 5 (1).png" class="product-image align-self-center" alt="product-image">
+            <h5 class="card-title">Ncstar 3W 150 Lumen Led Flashlig...</h5>
           </div>
-        </div>
-      </div>
-      <div class="card p-3">
-        <span class="discount d-flex">
-          <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
-          <p>-50%</p>
-        </span>
-        <div class="product-image-and-title d-flex flex-column">
-          <img src="./assets/img/home/image (1).png" class="product-image align-self-center" alt="product-image">
-          <h5 class="card-title">Ncstar 3W 150 Lumen Led Flashlig...</h5>
-        </div>
-        <div class=" d-flex justify-content-between align-items-end pt-3">
-          <div class="div">
-            <p class="discouted-price m-0 p-0">99.99</p>
-            <h4 class="price-now">49.99 <span>CAD</span></h4>
-          </div>
-          <div class="div align-self-center">
-            <a href="#" class="btn"><img src="./assets/icons/fi-rr-shopping-cart.svg" alt="cart"></a>
+          <div class="d-flex justify-content-between align-items-end pt-3">
+            <div class="div">
+              <p class="discouted-price m-0 p-0">99.99</p>
+              <h4 class="price-now">49.99 <span>CAD</span></h4>
+            </div>
+            <div class="div align-self-center">
+              <a href="#" class="btn"><img src="./assets/icons/fi-rr-shopping-cart.svg" alt="cart"></a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card p-3">
-        <div class="discount d-flex">
-          <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
-          <p>-50%</p>
-        </div>
-        <div class="product-image-and-title d-flex flex-column">
-          <img src="./assets/img/home/image 5.png" class="product-image align-self-center" alt="product-image">
-          <h5 class="card-title">Ncstar 3W 150 Lumen Led Flashlig...</h5>
-        </div>
-        <div class="d-flex justify-content-between align-items-end pt-3">
-          <div class="div">
-            <p class="discouted-price m-0 p-0">99.99</p>
-            <h4 class="price-now">49.99 <span>CAD</span></h4>
+        <div class="card p-3">
+          <div class="discount d-flex">
+            <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
+            <p>-50%</p>
           </div>
-          <div class="div align-self-center">
-            <a href="#" class="btn"><img src="./assets/icons/fi-rr-shopping-cart.svg" alt="cart"></a>
+          <div class="product-image-and-title d-flex flex-column">
+            <img src="./assets/img/home/image 5 (2).png" class="product-image align-self-center" alt="product-image">
+            <h5 class="card-title">Ncstar 3W 150 Lumen Led Flashlig...</h5>
           </div>
-        </div>
-      </div>
-      <div class="card p-3">
-        <div class="discount d-flex">
-          <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
-          <p>-50%</p>
-        </div>
-        <div class="product-image-and-title d-flex flex-column">
-          <img src="./assets/img/home/image 5 (1).png" class="product-image align-self-center" alt="product-image">
-          <h5 class="card-title">Ncstar 3W 150 Lumen Led Flashlig...</h5>
-        </div>
-        <div class="d-flex justify-content-between align-items-end pt-3">
-          <div class="div">
-            <p class="discouted-price m-0 p-0">99.99</p>
-            <h4 class="price-now">49.99 <span>CAD</span></h4>
-          </div>
-          <div class="div align-self-center">
-            <a href="#" class="btn"><img src="./assets/icons/fi-rr-shopping-cart.svg" alt="cart"></a>
+          <div class="d-flex justify-content-between align-items-end pt-3">
+            <div class="div">
+              <p class="discouted-price m-0 p-0">99.99</p>
+              <h4 class="price-now">49.99 <span>CAD</span></h4>
+            </div>
+            <div class="div align-self-center">
+              <a href="#" class="btn"><img src="./assets/icons/fi-rr-shopping-cart.svg" alt="cart"></a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card d-none when-more p-3">
-        <div class="discount d-flex">
-          <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
-          <p>-50%</p>
-        </div>
-        <div class="product-image-and-title d-flex flex-column">
-          <img src="./assets/img/home/image 5 (2).png" class="product-image align-self-center" alt="product-image">
-          <h5 class="card-title">Ncstar 3W 150 Lumen Led Flashlig...</h5>
-        </div>
-        <div class="d-flex justify-content-between align-items-end pt-3">
-          <div class="div">
-            <p class="discouted-price m-0 p-0">99.99</p>
-            <h4 class="price-now">49.99 <span>CAD</span></h4>
+        <div class="card p-3">
+          <div class="discount d-flex">
+            <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
+            <p>-50%</p>
           </div>
-          <div class="div align-self-center">
-            <a href="#" class="btn"><img src="./assets/icons/fi-rr-shopping-cart.svg" alt="cart"></a>
+          <div class="product-image-and-title d-flex flex-column">
+            <img src="./assets/img/home/image 5 (2).png" class="product-image align-self-center" alt="product-image">
+            <h5 class="card-title">Ncstar 3W 150 Lumen Led Flashlig...</h5>
           </div>
-        </div>
-      </div>
-      <div class="card d-none when-more p-3">
-        <span class="discount d-flex">
-          <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
-          <p>-50%</p>
-        </span>
-        <div class="product-image-and-title d-flex flex-column">
-          <img src="./assets/img/home/image (1).png" class="product-image align-self-center" alt="product-image">
-          <h5 class="card-title">Ncstar 3W 150 Lumen Led Flashlig...</h5>
-        </div>
-        <div class=" d-flex justify-content-between align-items-end pt-3">
-          <div class="div">
-            <p class="discouted-price m-0 p-0">99.99</p>
-            <h4 class="price-now">49.99 <span>CAD</span></h4>
-          </div>
-          <div class="div align-self-center">
-            <a href="#" class="btn"><img src="./assets/icons/fi-rr-shopping-cart.svg" alt="cart"></a>
+          <div class="d-flex justify-content-between align-items-end pt-3">
+            <div class="div">
+              <p class="discouted-price m-0 p-0">99.99</p>
+              <h4 class="price-now">49.99 <span>CAD</span></h4>
+            </div>
+            <div class="div align-self-center">
+              <a href="#" class="btn"><img src="./assets/icons/fi-rr-shopping-cart.svg" alt="cart"></a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card d-none when-more p-3">
-        <div class="discount d-flex">
-          <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
-          <p>-50%</p>
-        </div>
-        <div class="product-image-and-title d-flex flex-column">
-          <img src="./assets/img/home/image 5.png" class="product-image align-self-center" alt="product-image">
-          <h5 class="card-title">Ncstar 3W 150 Lumen Led Flashlig...</h5>
-        </div>
-        <div class="d-flex justify-content-between align-items-end pt-3">
-          <div class="div">
-            <p class="discouted-price m-0 p-0">99.99</p>
-            <h4 class="price-now">49.99 <span>CAD</span></h4>
+        <div class="card p-3">
+          <span class="discount d-flex">
+            <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
+            <p>-50%</p>
+          </span>
+          <div class="product-image-and-title d-flex flex-column">
+            <img src="./assets/img/home/image (1).png" class="product-image align-self-center" alt="product-image">
+            <h5 class="card-title">Ncstar 3W 150 Lumen Led Flashlig...</h5>
           </div>
-          <div class="div align-self-center">
-            <a href="#" class="btn"><img src="./assets/icons/fi-rr-shopping-cart.svg" alt="cart"></a>
+          <div class=" d-flex justify-content-between align-items-end pt-3">
+            <div class="div">
+              <p class="discouted-price m-0 p-0">99.99</p>
+              <h4 class="price-now">49.99 <span>CAD</span></h4>
+            </div>
+            <div class="div align-self-center">
+              <a href="#" class="btn"><img src="./assets/icons/fi-rr-shopping-cart.svg" alt="cart"></a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card d-none when-more p-3">
-        <div class="discount d-flex">
-          <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
-          <p>-50%</p>
-        </div>
-        <div class="product-image-and-title d-flex flex-column">
-          <img src="./assets/img/home/image 5 (1).png" class="product-image align-self-center" alt="product-image">
-          <h5 class="card-title">Ncstar 3W 150 Lumen Led Flashlig...</h5>
-        </div>
-        <div class="d-flex justify-content-between align-items-end pt-3">
-          <div class="div">
-            <p class="discouted-price m-0 p-0">99.99</p>
-            <h4 class="price-now">49.99 <span>CAD</span></h4>
+        <div class="card p-3">
+          <div class="discount d-flex">
+            <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
+            <p>-50%</p>
           </div>
-          <div class="div align-self-center">
-            <a href="#" class="btn"><img src="./assets/icons/fi-rr-shopping-cart.svg" alt="cart"></a>
+          <div class="product-image-and-title d-flex flex-column">
+            <img src="./assets/img/home/image 5.png" class="product-image align-self-center" alt="product-image">
+            <h5 class="card-title">Ncstar 3W 150 Lumen Led Flashlig...</h5>
+          </div>
+          <div class="d-flex justify-content-between align-items-end pt-3">
+            <div class="div">
+              <p class="discouted-price m-0 p-0">99.99</p>
+              <h4 class="price-now">49.99 <span>CAD</span></h4>
+            </div>
+            <div class="div align-self-center">
+              <a href="#" class="btn"><img src="./assets/icons/fi-rr-shopping-cart.svg" alt="cart"></a>
+            </div>
+          </div>
+        </div>
+        <div class="card p-3">
+          <div class="discount d-flex">
+            <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
+            <p>-50%</p>
+          </div>
+          <div class="product-image-and-title d-flex flex-column">
+            <img src="./assets/img/home/image 5 (1).png" class="product-image align-self-center" alt="product-image">
+            <h5 class="card-title">Ncstar 3W 150 Lumen Led Flashlig...</h5>
+          </div>
+          <div class="d-flex justify-content-between align-items-end pt-3">
+            <div class="div">
+              <p class="discouted-price m-0 p-0">99.99</p>
+              <h4 class="price-now">49.99 <span>CAD</span></h4>
+            </div>
+            <div class="div align-self-center">
+              <a href="#" class="btn"><img src="./assets/icons/fi-rr-shopping-cart.svg" alt="cart"></a>
+            </div>
+          </div>
+        </div>
+        <div class="card p-3 when-more d-none">
+          <div class="discount d-flex">
+            <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
+            <p>-50%</p>
+          </div>
+          <div class="product-image-and-title d-flex flex-column">
+            <img src="./assets/img/home/image 5 (2).png" class="product-image align-self-center" alt="product-image">
+            <h5 class="card-title">Ncstar 3W 150 Lumen Led Flashlig...</h5>
+          </div>
+          <div class="d-flex justify-content-between align-items-end pt-3">
+            <div class="div">
+              <p class="discouted-price m-0 p-0">99.99</p>
+              <h4 class="price-now">49.99 <span>CAD</span></h4>
+            </div>
+            <div class="div align-self-center">
+              <a href="#" class="btn"><img src="./assets/icons/fi-rr-shopping-cart.svg" alt="cart"></a>
+            </div>
+          </div>
+        </div>
+        <div class="card p-3 when-more d-none">
+          <span class="discount d-flex">
+            <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
+            <p>-50%</p>
+          </span>
+          <div class="product-image-and-title d-flex flex-column">
+            <img src="./assets/img/home/image (1).png" class="product-image align-self-center" alt="product-image">
+            <h5 class="card-title">Ncstar 3W 150 Lumen Led Flashlig...</h5>
+          </div>
+          <div class=" d-flex justify-content-between align-items-end pt-3">
+            <div class="div">
+              <p class="discouted-price m-0 p-0">99.99</p>
+              <h4 class="price-now">49.99 <span>CAD</span></h4>
+            </div>
+            <div class="div align-self-center">
+              <a href="#" class="btn"><img src="./assets/icons/fi-rr-shopping-cart.svg" alt="cart"></a>
+            </div>
+          </div>
+        </div>
+        <div class="card p-3 when-more d-none">
+          <div class="discount d-flex">
+            <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
+            <p>-50%</p>
+          </div>
+          <div class="product-image-and-title d-flex flex-column">
+            <img src="./assets/img/home/image 5.png" class="product-image align-self-center" alt="product-image">
+            <h5 class="card-title">Ncstar 3W 150 Lumen Led Flashlig...</h5>
+          </div>
+          <div class="d-flex justify-content-between align-items-end pt-3">
+            <div class="div">
+              <p class="discouted-price m-0 p-0">99.99</p>
+              <h4 class="price-now">49.99 <span>CAD</span></h4>
+            </div>
+            <div class="div align-self-center">
+              <a href="#" class="btn"><img src="./assets/icons/fi-rr-shopping-cart.svg" alt="cart"></a>
+            </div>
+          </div>
+        </div>
+        <div class="card p-3 when-more d-none">
+          <div class="discount d-flex">
+            <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
+            <p>-50%</p>
+          </div>
+          <div class="product-image-and-title d-flex flex-column">
+            <img src="./assets/img/home/image 5 (1).png" class="product-image align-self-center" alt="product-image">
+            <h5 class="card-title">Ncstar 3W 150 Lumen Led Flashlig...</h5>
+          </div>
+          <div class="d-flex justify-content-between align-items-end pt-3">
+            <div class="div">
+              <p class="discouted-price m-0 p-0">99.99</p>
+              <h4 class="price-now">49.99 <span>CAD</span></h4>
+            </div>
+            <div class="div align-self-center">
+              <a href="#" class="btn"><img src="./assets/icons/fi-rr-shopping-cart.svg" alt="cart"></a>
+            </div>
           </div>
         </div>
       </div>

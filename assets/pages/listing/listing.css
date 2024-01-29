@@ -44,10 +44,9 @@
 }
 
 .filter-section {
+  width: auto;
   background-color: #F2F0EA !important;
   border: none;
-  height: 395px !important;
-  overflow-y: scroll;
 }
 
 .filter-section p {
@@ -108,6 +107,13 @@ p:nth-child(8) {
 }
 
 @media screen and (max-width: 576px) {
+  .filtered-cards .card {
+    flex: 1 0 49%;
+    min-width: 0; 
+    margin: 3px 3px;
+  }
+
+
   .view-more-section-div  button { 
     width: 100vw;
   }

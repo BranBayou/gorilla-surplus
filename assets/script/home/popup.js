@@ -7,7 +7,7 @@ const overlay = document.querySelector('.overlay');
 let isMouseOverButton = false;
 let isMouseOverPopup = false;
 
-catalogBtn.addEventListener('mouseover', () => {
+catalogBtn.addEventListener('mouseover', (e) => {
   isMouseOverButton = true;
   showPopup();
 });
