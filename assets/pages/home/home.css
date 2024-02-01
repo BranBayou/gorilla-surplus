@@ -158,11 +158,12 @@ header {
   color: #fff;
 }
 
-.main-section button {
+.main-section .learn button {
+  cursor: pointer;
   position: absolute;
   right: 10px;
   bottom: 10px;
-  width: 253px;
+  width: 17.5vw;
   border-radius: 16px;
   border: 1px solid #383634;
   font-family: Oswald;

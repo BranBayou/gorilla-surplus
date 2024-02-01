@@ -1,3 +1,5 @@
+/* Handle show more introduction text */
+
 const showMoreIntro = document.querySelector('.show-more-intro-text-btn');
 const showLessIntro = document.querySelector('.show-less-intro-text-btn');
 const moreIntroText = document.querySelector('.more-intro-text');
@@ -12,17 +14,24 @@ showLessIntro.addEventListener('click', () => {
   showMoreIntro.classList.remove('d-none');
 });
 
+/* Handle filter section */ 
+
 const filterBtn = document.querySelector('.filter-btn');
 const filterSection = document.querySelector('.filter-section');
 const clearFilterBtn = document.querySelector('.clear-filter-btn');
+const filterdCards = document.querySelector('.filtered-cards');
 
 filterBtn.addEventListener('click', () => {
   filterSection.classList.toggle('d-none');
+  filterBtn.innerHTML = filterBtn.innerHTML === 'Open Filter' ? 'Clear Filter' : 'Open Filter';
 });
 
 clearFilterBtn.addEventListener('click', () => {
   filterSection.classList.add('d-none');
+  filterBtn.innerHTML = filterBtn.innerHTML === 'Open Filter' ? 'Clear Filter' : 'Open Filter';
 });
+
+/* Handle view more cards */
 
 const viewMoreCardsBtn = document.querySelector('.view-more-cards-btn');
 const moreProducts = document.querySelectorAll('.when-more');
@@ -33,18 +42,62 @@ viewMoreCardsBtn.addEventListener('click', () => {
   })
 });
 
-const genderList = document.querySelector('.gender-filter-btns');
-const plusIcon = document.querySelector('.plus-icon');
-const minusIcon = document.querySelector('.minus-icon');
+/* Handle filter buttons for all conditions */
 
-plusIcon.addEventListener('click', () => {
-  genderList.classList.remove('d-none');
-  plusIcon.classList.add('d-none');
-  minusIcon.classList.remove('d-none');
+document.addEventListener("DOMContentLoaded", function () {
+  const minusIcons = document.querySelectorAll(".minus-icon");
+  const plusIcons = document.querySelectorAll(".plus-icon");
+  const filterDivs = document.querySelectorAll(".filter-div");
+
+  function toggleFilterButtons(categoryDiv) {
+    const filterButtons = categoryDiv.querySelector(".filter-btns");
+    if (filterButtons) {
+      filterButtons.classList.toggle("d-none");
+
+      const minusIcon = categoryDiv.querySelector(".minus-icon");
+      const plusIcon = categoryDiv.querySelector(".plus-icon");
+
+      if (minusIcon && plusIcon) {
+        minusIcon.classList.toggle("d-none");
+        plusIcon.classList.toggle("d-none");
+      }
+    }
+  }
+
+  function closeOtherFilters(currentCategoryDiv) {
+    filterDivs.forEach(function (filterDiv) {
+      if (filterDiv !== currentCategoryDiv) {
+        const filterButtons = filterDiv.querySelector(".filter-btns");
+        if (filterButtons) {
+          filterButtons.classList.add("d-none");
+          
+          const minusIcon = filterDiv.querySelector(".minus-icon");
+          const plusIcon = filterDiv.querySelector(".plus-icon");
+          
+          if (minusIcon && plusIcon) {
+            minusIcon.classList.add("d-none");
+            plusIcon.classList.remove("d-none");
+          }
+        }
+      }
+    });
+  }
+
+  function handleFilterClick(event) {
+    const categoryDiv = event.target.closest(".filter-div");
+
+    if (categoryDiv) {
+      closeOtherFilters(categoryDiv);
+      toggleFilterButtons(categoryDiv);
+    }
+  }
+
+  minusIcons.forEach(function (minusIcon) {
+    minusIcon.addEventListener("click", handleFilterClick);
+  });
+
+  plusIcons.forEach(function (plusIcon) {
+    plusIcon.addEventListener("click", handleFilterClick);
+  });
 });
 
-minusIcon.addEventListener('click', () => {
-  genderList.classList.add('d-none');
-  plusIcon.classList.remove('d-none');
-  minusIcon.classList.add('d-none');
-});
