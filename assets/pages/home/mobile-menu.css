@@ -1,7 +1,7 @@
 .mobile-menu {
   position: absolute;
-  top: 13.5%;
-  left: 2.22%;
+  top: 100%;
+  width: 100%;
   background-color: #F2F0EA;
   border-radius: 10px;
   padding: 10px 10px 50px 10px;

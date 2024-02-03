@@ -39,18 +39,23 @@ const summaryDivs = document.querySelectorAll('.details-summary');
 /* Handle show more and less catalogs in mebile menu */
 
 const details = document.querySelectorAll('.main-detail');
-    details.forEach(detail => {
-    const moreCategories = detail.querySelector('.more-categories');
-    const showMoreCategoriesBtn = detail.querySelector('.show-more-categories-btn');
-    const showLessCategoriesBtn = detail.querySelector('.show-less-categories-btn') ;
+details.forEach(detail => {
+  const moreCategories = detail.querySelector('.more-categories');
+  const showMoreCategoriesBtn = detail.querySelector('.show-more-categories-btn');
+  const showLessCategoriesBtn = detail.querySelector('.show-less-categories-btn');
 
-    showMoreCategoriesBtn.addEventListener('click', () => {
-      moreCategories.style.display = 'block';
-      showMoreCategoriesBtn.style.display = 'none';
-    });
+  showMoreCategoriesBtn.addEventListener('click', () => {
+    moreCategories.style.display = 'block';
+    showMoreCategoriesBtn.style.display = 'none';
+  });
 
-    showLessCategoriesBtn.addEventListener('click', () => {
-      moreCategories.style.display = 'none';
-      showMoreCategoriesBtn.style.display = 'block';
+  showLessCategoriesBtn.addEventListener('click', () => {
+    moreCategories.style.display = 'none';
+    showMoreCategoriesBtn.style.display = 'block';
+
+    showMoreCategoriesBtn.parentElement.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
     });
   });
+});

@@ -3,6 +3,7 @@
 const catalogBtn = document.getElementById('catalog');
 const popupScreen = document.querySelector('.popup');
 const overlay = document.querySelector('.overlay'); 
+const inputTypeSearch = document.querySelector('.search-input');
 
 let isMouseOverButton = false;
 let isMouseOverPopup = false;
@@ -17,29 +18,32 @@ catalogBtn.addEventListener('mouseover', (e) => {
 //   showPopup();
 // });
 
-catalogBtn.addEventListener('mouseout', () => {
+catalogBtn.addEventListener('mouseout', (e) => {
+  e.preventDefault();
   isMouseOverButton = false;
   hidePopup();
 });
 
-popupScreen.addEventListener('mouseover', () => {
+popupScreen.addEventListener('mouseover', (e) => {
+  e.preventDefault();
   isMouseOverPopup = true;
   showPopup();
 });
 
-popupScreen.addEventListener('mouseout', () => {
+popupScreen.addEventListener('mouseout', (e) => {
+  e.preventDefault();
   isMouseOverPopup = false;
   hidePopup();
 });
 
-function showPopup() {
+function showPopup(e) {
   if (isMouseOverButton || isMouseOverPopup) {
     popupScreen.classList.remove('d-none');
     overlay.classList.remove('d-none');
   }
 }
 
-function hidePopup() {
+function hidePopup(e) {
   if (!isMouseOverButton && !isMouseOverPopup) {
     popupScreen.classList.add('d-none');
     overlay.classList.add('d-none');
