@@ -5,49 +5,39 @@ const popupScreen = document.querySelector('.popup');
 const overlay = document.querySelector('.overlay'); 
 const inputTypeSearch = document.querySelector('.search-input');
 
-let isMouseOverButton = false;
-let isMouseOverPopup = false;
-
-catalogBtn.addEventListener('mouseover', (e) => {
-  isMouseOverButton = true;
+catalogBtn.addEventListener('click', (e) => {
   showPopup();
 });
 
-// catalogBtn.addEventListener('click', () => {
-//   isMouseOverButton = true;
-//   showPopup();
-// });
+catalogBtn.addEventListener('mouseover', () => {
+  showPopup();
+});
 
 catalogBtn.addEventListener('mouseout', (e) => {
-  e.preventDefault();
-  isMouseOverButton = false;
-  hidePopup();
+  showPopup();
 });
 
 popupScreen.addEventListener('mouseover', (e) => {
-  e.preventDefault();
-  isMouseOverPopup = true;
   showPopup();
 });
 
 popupScreen.addEventListener('mouseout', (e) => {
-  e.preventDefault();
-  isMouseOverPopup = false;
+  hidePopup();
+});
+
+overlay.addEventListener('click', (e) => {
   hidePopup();
 });
 
 function showPopup(e) {
-  if (isMouseOverButton || isMouseOverPopup) {
     popupScreen.classList.remove('d-none');
     overlay.classList.remove('d-none');
-  }
+  
 }
 
 function hidePopup(e) {
-  if (!isMouseOverButton && !isMouseOverPopup) {
     popupScreen.classList.add('d-none');
     overlay.classList.add('d-none');
-  }
 }
 
 
