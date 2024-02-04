@@ -201,8 +201,7 @@ header {
 }
 
 .new-arrival-cards {
-  height: 395px;
-  overflow-y: scroll;
+  height: auto;
 }
 
 .new-arrival-cards .card {
@@ -281,6 +280,16 @@ header {
   transition: transform 0.3s ease;
 }
 
+.show-more-new-arrivals-btn,
+.show-less-new-arrivals-btn,
+.show-more-discounted-btn,
+.show-less-discounted-btn {
+  margin: 50px 0 0 0;
+  padding: 20px 50px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
 /* Discounted Section */
 
 .discounted-main-con {
@@ -298,8 +307,7 @@ header {
 }
 
 .discounted-cards {
-  height: 395px;
-  overflow-y: scroll;
+  height: auto;
 }
 
 .discounted-main-con .card:hover .product-image {
