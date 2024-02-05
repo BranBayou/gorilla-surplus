@@ -27,6 +27,15 @@ addToBtn.addEventListener('click', (e) => {
   specializationsPart.classList.add('d-none'); 
 });
 
+/* Handle product size */
+const sizeOfProducts = document.querySelectorAll('.size-of-product');
+const showSize = document.querySelector('.show-size');
+sizeOfProducts.forEach(sizeOfProduct => {
+  sizeOfProduct.addEventListener('click', () =>{
+    showSize.innerHTML = sizeOfProduct.innerHTML;
+  })
+})
+
 
 /* Handle Input type number */
 const decrement = document.getElementById('decrement');
