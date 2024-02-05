@@ -103,10 +103,12 @@ document.addEventListener("DOMContentLoaded", function () {
 /* Handle togle category */
 
 const categoryLists = document.querySelectorAll('.category-list');
+
 categoryLists.forEach(categoryList => {
   categoryList.addEventListener('click', event => {
-        const clickedList = event.currentTarget;
-        const ul = clickedList.querySelector('ul');
-        ul.classList.toggle('d-none');
-      });
-    });
+    if (event.target.classList.contains('category-list')) {
+      const ul = categoryList.querySelector('ul');
+      ul.classList.toggle('d-none');
+    }
+  });
+});
