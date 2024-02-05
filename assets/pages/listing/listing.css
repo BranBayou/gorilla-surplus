@@ -51,9 +51,21 @@
 
 .filter-section p {
   font-family: Oswald;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 24px;
+}
+
+.filter-section ul li {
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.outerList li img {
+  width: 20px;
+  transform: rotate(45deg);
 }
 
 .filter-section button {

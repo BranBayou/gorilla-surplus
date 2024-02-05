@@ -26,3 +26,31 @@ addToBtn.addEventListener('click', (e) => {
   detailsPart.classList.add('d-none'); 
   specializationsPart.classList.add('d-none'); 
 });
+
+
+/* Handle Input type number */
+const decrement = document.getElementById('decrement');
+  const increment = document.getElementById('increment');
+  const numberInput = document.getElementById('quantity');
+  let min = parseInt(numberInput.getAttribute('min'));
+  let max = parseInt(numberInput.getAttribute('max'));
+  let step = parseInt(numberInput.getAttribute('step'));
+  let value = parseInt(numberInput.getAttribute('value'));
+
+  decrement.addEventListener('click', () => {
+    let calStep = step * -1;
+    let newValue = value + calStep;
+    if (newValue >= min && newValue <= max) {
+      value = newValue;
+      numberInput.setAttribute('value', newValue);
+    }
+  });
+
+  increment.addEventListener('click', () => {
+    let calStep = step * 1;
+    let newValue = value + calStep;
+    if (newValue >= min && newValue <= max) {
+      value = newValue;
+      numberInput.setAttribute('value', newValue);
+    }
+  });

@@ -8,12 +8,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Inter:wght@300;400;500&family=Lato&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
   <link rel="stylesheet" href="./assets/pages/home/custom.css">
   <link rel="stylesheet" href="./assets/pages/home/home.css">
   <link rel="stylesheet" href="./assets/pages/home/popup.css">
   <link rel="stylesheet" href="./assets/pages/home/mobile-menu.css">
   <link rel="stylesheet" href="./assets/pages/listing/listing.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body class="">
   <!-- Header start here -->
@@ -93,7 +93,7 @@
           </div>
         </div>
         <div class="third-col d-flex flex-column">
-          <p><a href="">Airsoft Funs</a></p>
+          <p><a href="">Airsoft Guns</a></p>
           <a href="#">Airsoft Pistols</a>
           <a href="#">Airsoft SMGs</a>
           <a href="#">Airsoft Rifies</a>
@@ -782,11 +782,11 @@
       <p>Blank-firing guns can be used as realistic film and stage props. They can also function as starter pistols for starting races. We carry 9mm front-firing blank guns from popular brands <span class="show-more-intro-text-btn">More</span> <span class="more-intro-text d-none">like Rohm. Our authentic blank revolvers are coveted by collectors and pistol replica enthusiasts everywhere. Find authentic German-made blank guns with realistic metal construction and literally get the best "bang" for your buck at Gorilla Surplus. <span class="show-less-intro-text-btn">Less</span></span></p>
     </div>
     <div class="sort-and-filter d-flex justify-content-between my-4">
-      <button class="filter-btn header-icons-hight" type="button">Open Filter</button>
+      <button class="filter-btn header-icons-hight" type="button">Filters</button>
       <button class="sort-btn header-icons-hight" type="button">Sort by: Featured</button>
     </div>
     <div class="filter-and-filtered-cards d-flex flex-column flex-md-row">
-      <div class="filter-section w-auto d-none p-3">
+      <div class="filter-section w-auto p-3">
         <div class="category-filter filter-div d-flex flex-column justify-content-between">
           <div class="category-div d-flex justify-content-between">
             <p>Category</p>
@@ -796,11 +796,52 @@
             </div>
           </div>
           <div class="all-filter-btns filter-btns d-none d-flex flex-wrap gap-2">
-            <button class="header-icons-hight" type="button" href="#">Balack Guns</button>
-            <button class="header-icons-hight" type="button" href="#">BB Guns</button>
-            <button class="header-icons-hight" type="button" href="#">Pellet Guns</button>
-            <button class="header-icons-hight" type="button" href="#">Airsoft Guns</button>
-            <button class="header-icons-hight" type="button" href="#">Ammo $ Gas</button>
+            <ul class="outerList">
+              <li class="category-list"><img src="./assets/icons/listing/chevron-down.svg" alt="rectangle">Balack Guns(30)
+                <ul class="d-none" id="balackGuns">
+                  <li>Blank Guns(13)</li>
+                  <li>Blank Gun Magazine(17)</li>
+                </ul>
+              </li>
+              <li class="category-list"><img src="./assets/icons/listing/chevron-down.svg" alt="rectangle">BB Guns(160)
+                <ul class="d-none" id="bbGuns">
+                  <li>BB Pistols(30)</li>
+                  <li>BB SMGs(45)</li>
+                  <li>BB Rifies(45)</li>
+                  <li>BB Magazine(40)</li>
+                </ul>
+              </li>
+              <li class="category-list"><img src="./assets/icons/listing/chevron-down.svg" alt="rectangle">Pellet Guns(90)
+                <ul class="d-none" id="pellet">
+                  <li>Pellet Pistols(40)</li>
+                  <li>Pellet Rifies(20)</li>
+                  <li>Pellet Magazines(30)</li>
+                </ul>
+              </li>
+              <li class="category-list"><img src="./assets/icons/listing/chevron-down.svg" alt="rectangle">Airsoft Guns(320)
+                <ul class="d-none" id="airsoft">
+                  <li>Airsoft Pistols(25)</li>
+                  <li>Airsoft SMGs(20)</li>
+                  <li>Airsoft Rifies(30)</li>
+                  <li>Airsoft Magazinos(30)</li>
+                  <li>Airsoft Batteries & Chargors(40)</li>
+                  <li>Airsoft Masks(45)</li>
+                  <li>Airsoft Launchers(25)</li>
+                  <li>Airsoft Internal Parts(30)</li>
+                  <li>Airsoft External Parts(75)</li>
+                </ul>
+              </li>
+              <li class="category-list"><img src="./assets/icons/listing/chevron-down.svg" alt="rectangle">Ammo $ Gas(160)
+                <ul class="d-none" id="ammo">
+                  <li>Pellets(25)</li>
+                  <li>Steel BBs(25)</li>
+                  <li>Airsoft Ammo(30)</li>
+                  <li>Speed Loaders(40)</li>
+                  <li>Co2 Cartridges(20)</li>
+                  <li>Green Gas(20)</li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
         <div class="gender-filter filter-div d-flex flex-column justify-content-between">
@@ -812,12 +853,14 @@
             </div>
           </div>
           <div class="all-filter-btns filter-btns d-none d-flex flex-wrap gap-2">
-            <button class="header-icons-hight" type="button" href="#">All</button>
-            <button class="header-icons-hight" type="button" href="#">Men</button>
-            <button class="header-icons-hight" type="button" href="#">Women</button>
-            <button class="header-icons-hight" type="button" href="#">Kids</button>
-            <button class="header-icons-hight" type="button" href="#">Girls</button>
-            <button class="header-icons-hight" type="button" href="#">Unisex</button>
+            <ul class="outerList">
+              <li><img src="./assets/icons/listing/chevron-down.svg" alt="rectangle">All</li>
+              <li><img src="./assets/icons/listing/chevron-down.svg" alt="rectangle">Men</li>
+              <li><img src="./assets/icons/listing/chevron-down.svg" alt="rectangle">Women</li>
+              <li><img src="./assets/icons/listing/chevron-down.svg" alt="rectangle">Kids</li>
+              <li><img src="./assets/icons/listing/chevron-down.svg" alt="rectangle">Girls</li>
+              <li><img src="./assets/icons/listing/chevron-down.svg" alt="rectangle">Unisex</li>
+            </ul>
           </div>
         </div>
         <div class="brand-filter filter-div d-flex flex-column justify-content-between">
@@ -829,9 +872,11 @@
             </div>
           </div>
           <div class="all-filter-btns filter-btns d-none d-flex flex-wrap gap-2">
-            <button class="header-icons-hight" type="button" href="#">Rohm</button>
-            <button class="header-icons-hight" type="button" href="#">Umarex</button>
-            <button class="header-icons-hight" type="button" href="#">Various manufacturers</button>
+            <ul class="outerList">
+              <li><img src="./assets/icons/listing/chevron-down.svg" alt="rectangle">Rohm</li>
+              <li><img src="./assets/icons/listing/chevron-down.svg" alt="rectangle">Umarex</li>
+              <li><img src="./assets/icons/listing/chevron-down.svg" alt="rectangle">Various manufacturers</li>
+            </ul>
           </div>
         </div>
         <div class="caliber-filter filter-div flex-column d-flex justify-content-between">
@@ -880,7 +925,7 @@
         </div>
       </div>
       <div class="filtered-cards d-flex justify-content-start flex-wrap gap-1">
-          <div class="card p-3">
+          <div class="card p-3 rounded-4">
             <span class="discount d-flex">
               <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
               <p>-50%</p>
@@ -899,7 +944,7 @@
               </div>
             </div>
           </div>
-          <div class="card p-3">
+          <div class="card p-3 rounded-4">
             <div class="discount d-flex">
               <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
               <p>-50%</p>
@@ -918,7 +963,7 @@
               </div>
             </div>
           </div>
-          <div class="card p-3">
+          <div class="card p-3 rounded-4">
             <div class="discount d-flex">
               <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
               <p>-50%</p>
@@ -937,7 +982,7 @@
               </div>
             </div>
           </div>
-          <div class="card p-3">
+          <div class="card p-3 rounded-4">
             <div class="discount d-flex">
               <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
               <p>-50%</p>
@@ -956,7 +1001,7 @@
               </div>
             </div>
           </div>
-          <div class="card p-3">
+          <div class="card p-3 rounded-4">
             <div class="discount d-flex">
               <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
               <p>-50%</p>
@@ -975,7 +1020,7 @@
               </div>
             </div>
           </div>
-          <div class="card p-3">
+          <div class="card p-3 rounded-4">
             <span class="discount d-flex">
               <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
               <p>-50%</p>
@@ -994,7 +1039,7 @@
               </div>
             </div>
           </div>
-          <div class="card p-3">
+          <div class="card p-3 rounded-4">
             <div class="discount d-flex">
               <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
               <p>-50%</p>
@@ -1013,7 +1058,7 @@
               </div>
             </div>
           </div>
-          <div class="card p-3">
+          <div class="card p-3 rounded-4">
             <div class="discount d-flex">
               <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
               <p>-50%</p>
@@ -1032,7 +1077,7 @@
               </div>
             </div>
           </div>
-          <div class="card p-3 when-more d-none">
+          <div class="card p-3 when-more d-none rounded-4">
             <div class="discount d-flex">
               <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
               <p>-50%</p>
@@ -1051,7 +1096,7 @@
               </div>
             </div>
           </div>
-          <div class="card p-3 when-more d-none">
+          <div class="card p-3 when-more d-none rounded-4">
             <span class="discount d-flex">
               <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
               <p>-50%</p>
@@ -1070,7 +1115,7 @@
               </div>
             </div>
           </div>
-          <div class="card p-3 when-more d-none">
+          <div class="card p-3 when-more d-none rounded-4">
             <div class="discount d-flex">
               <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
               <p>-50%</p>
@@ -1089,7 +1134,7 @@
               </div>
             </div>
           </div>
-          <div class="card p-3 when-more d-none">
+          <div class="card p-3 when-more d-none rounded-4">
             <div class="discount d-flex">
               <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
               <p>-50%</p>

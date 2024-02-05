@@ -16,19 +16,18 @@ showLessIntro.addEventListener('click', () => {
 
 /* Handle filter section */ 
 
-const filterBtn = document.querySelector('.filter-btn');
-const filterSection = document.querySelector('.filter-section');
+// const filterBtn = document.querySelector('.filter-btn');
+// const filterSection = document.querySelector('.filter-section');
+
+// const filterdCards = document.querySelector('.filtered-cards');
+
+// filterBtn.addEventListener('click', () => {
+//   filterSection.classList.toggle('d-none');
+//   filterBtn.innerHTML = filterBtn.innerHTML === 'Open Filter' ? 'Clear Filter' : 'Open Filter';
+// });
 const clearFilterBtn = document.querySelector('.clear-filter-btn');
-const filterdCards = document.querySelector('.filtered-cards');
-
-filterBtn.addEventListener('click', () => {
-  filterSection.classList.toggle('d-none');
-  filterBtn.innerHTML = filterBtn.innerHTML === 'Open Filter' ? 'Clear Filter' : 'Open Filter';
-});
-
 clearFilterBtn.addEventListener('click', () => {
-  filterSection.classList.add('d-none');
-  filterBtn.innerHTML = filterBtn.innerHTML === 'Open Filter' ? 'Clear Filter' : 'Open Filter';
+  location.reload();
 });
 
 /* Handle view more cards */
@@ -101,3 +100,13 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+/* Handle togle category */
+
+const categoryLists = document.querySelectorAll('.category-list');
+categoryLists.forEach(categoryList => {
+  categoryList.addEventListener('click', event => {
+        const clickedList = event.currentTarget;
+        const ul = clickedList.querySelector('ul');
+        ul.classList.toggle('d-none');
+      });
+    });

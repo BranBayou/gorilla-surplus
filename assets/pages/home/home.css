@@ -12,6 +12,7 @@ body {
 
 ul li {
   list-style-type: none;
+  cursor: pointer;
 }
 
 ul li a {
