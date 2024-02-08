@@ -16,18 +16,18 @@ showLessIntro.addEventListener('click', () => {
 
 /* Handle filter section */ 
 
-// const filterBtn = document.querySelector('.filter-btn');
-// const filterSection = document.querySelector('.filter-section');
+const filterBtn = document.querySelector('.filter-btn');
+const filterSection = document.querySelector('.filter-section');
 
 // const filterdCards = document.querySelector('.filtered-cards');
 
-// filterBtn.addEventListener('click', () => {
-//   filterSection.classList.toggle('d-none');
-//   filterBtn.innerHTML = filterBtn.innerHTML === 'Open Filter' ? 'Clear Filter' : 'Open Filter';
-// });
+filterBtn.addEventListener('click', () => {
+  filterSection.classList.toggle('d-none');
+  filterBtn.innerHTML = filterBtn.innerHTML === 'Open Filter' ? 'Clear Filter' : 'Open Filter';
+});
 const clearFilterBtn = document.querySelector('.clear-filter-btn');
 clearFilterBtn.addEventListener('click', () => {
-  location.reload();
+  filterSection.classList.toggle('d-none');
 });
 
 /* Handle view more cards */

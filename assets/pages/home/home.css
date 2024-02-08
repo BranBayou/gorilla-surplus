@@ -130,15 +130,16 @@ header {
 /* Main section style */
 
 .main-section {
-  height: 550px;
+  height: 680px;
   position: relative;
   margin-top: 10px;
+  z-index: 0;
+}
+
+.main-section img {
+  height: 100%;
+  object-fit: cover;
   border-radius: 16px;
-  z-index: -1;
-  background-image: url("../../img/home/Bg\ Photo.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .main-section .intro {
@@ -165,8 +166,7 @@ header {
   color: #fff;
 }
 
-.main-section .learn button {
-  cursor: pointer;
+.main-section a {
   position: absolute;
   right: 10px;
   bottom: 10px;
@@ -177,6 +177,24 @@ header {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
+  height: 78px;
+  background-color: #F2F0EA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #383634;
+}
+
+.main-section a:hover {
+  cursor: pointer;
+  color: #F2F0EA;
+  background-color: #383634;
+}
+
+.main-section .learn button a {
+  text-decoration: none;
+  color: #383634;
 }
 
 /* New arrivals section */
@@ -349,11 +367,23 @@ header {
   line-height: 20px;
 }
 
-.partners-btn-div button {
+.partners-btn-div a {
   font-family: Oswald;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
+  height: 78px;
+  background-color: #F2F0EA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #383634;
+}
+
+.partners-btn-div a:hover {
+  background-color: #383634;
+  color: #F2F0EA;
 }
 
 /* About section */
@@ -365,19 +395,21 @@ header {
 .about-section-left {
   height: 440px;
   width: 65%;
-  background-image: url('../../img/home/premium_photo-1683133499812-cde72f3a0f6c-transformed\ 1.png');
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-position: center;
+}
+
+.about-section-left img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  z-index: -1;
 }
 
 .about-section-right {
   height: 440px;
-  width: 34%;
-  background-image: url('../../img/home/Logob.svg');
-  background-size: center;
-  background-repeat: no-repeat;
-  background-position: center;
+  width: 35%;
   border: 2px solid #383634;
   border-radius: 16px;
 }
@@ -401,12 +433,24 @@ header {
   line-height: 20px;
 }
 
-.about-us-btn {
+.about-us-anchor {
   width: 100%;
   font-family: Oswald;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
+  height: 78px;
+  background-color: #F2F0EA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #383634;
+}
+
+.about-us-anchor:hover {
+  background-color: #383634;
+  color: #F2F0EA;
 }
 
 
@@ -462,9 +506,33 @@ footer .address {
   color: gray;
 }
 
+.subscribe-form {
+  border: 1px solid gray;
+  border-radius: 16px;
+}
+
 .signup-section input {
   background-color: #383634;
-  max-width: 250px;
+  border: none;
+  border-right: 1px solid gray;
+  outline: none;
+  caret-color: #F2F0EA;
+  color: #F2F0EA;
+  font-family: Oswald;
+  font-size: 18px;
+}
+
+.signup-section button {
+  background-color: #383634;
+  color: gray;
+  border: none;
+  font-weight: 600;
+  font-family: Oswald;
+  font-size: 18px;
+}
+
+.signup-section button:hover {
+  color: #F2F0EA;
 }
 
 .footer-bottom {
@@ -609,12 +677,17 @@ footer .address {
     transform: rotate(90deg);
   }
 
+  footer .locations {
+    max-width: 100%;
+  }
+
   .locations {
     text-align: center;
   }
 
   .location-and-signup {
     flex-direction: column;
+    text-align: center;
   }
 
   .footer-border {
@@ -705,18 +778,42 @@ footer .address {
     transform: rotate(90deg);
   }
 
-  .locations {
-    text-align: center;
-  }
-
   .location-and-signup {
     flex-direction: column;
+    text-align: center;
+  } 
+
+  footer .locations {
+    max-width: 100%;
+  }
+  
+
+  .subscribe-form {
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+    border-radius: none;
+  }
+
+  .signup-section input {
+    width: 60vw;
+    border-right: none;
+    border: 1px solid gray;
+    border-radius: 10px;
+  }
+
+  .signup-section button {
+    width: 60vw;
+    border: 1px solid gray;
+    border-radius: 10px;
   }
 
   .footer-border {
     display: none;
   }
-
+  
   .footer-bottom .copy-right {
     width: 100%;
     padding-top: 20px;

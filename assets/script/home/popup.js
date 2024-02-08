@@ -8,13 +8,13 @@ catalogBtn.addEventListener('click', (e) => {
   showPopup();
 });
 
-catalogBtn.addEventListener('mouseover', () => {
-  showPopup();
-});
+// catalogBtn.addEventListener('mouseover', () => {
+//   showPopup();
+// });
 
-catalogBtn.addEventListener('mouseout', (e) => {
-  showPopup();
-});
+// catalogBtn.addEventListener('mouseout', (e) => {
+//   showPopup();
+// });
 
 popupScreen.addEventListener('mouseover', (e) => {
   showPopup();
@@ -24,17 +24,17 @@ popupScreen.addEventListener('mouseout', (e) => {
   hidePopup();
 });
 
-overlay.addEventListener('click', (e) => {
+overlay.addEventListener('click', () => {
   hidePopup();
 });
 
-function showPopup(e) {
+function showPopup() {
     popupScreen.classList.remove('d-none');
     overlay.classList.remove('d-none');
   
 }
 
-function hidePopup(e) {
+function hidePopup() {
     popupScreen.classList.add('d-none');
     overlay.classList.add('d-none');
 }
