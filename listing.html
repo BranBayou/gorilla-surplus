@@ -23,8 +23,10 @@
       <button type="button" class="cart header-icons-hight d-lg-none" id="md-cart"><img src="/assets/icons/fi-rr-shopping-cart.png" alt=""></button>
       <button type="button" class="catalog header-icons-hight d-none d-lg-block" id="catalog">Catalog</button>
       <div class="search-box header-icons-hight d-none d-lg-flex">
-        <input class="search" type="search" placeholder="Search">
-        <img src="/assets/icons/fi-br-search.png" alt="search-icon">
+        <form class="d-flex" action="/search" method="get" role="search" id="">
+          <input class="search-input" type="search" placeholder="Search">
+          <button class="border border-0 bg-transparent" type="submit"><img src="/assets/icons/fi-br-search.png" alt="search-icon"></button>
+        </form> 
       </div>
     </div>
     <div class="center-section d-none d-lg-block">
@@ -42,12 +44,13 @@
       <button type="button" class="user header-icons-hight d-none d-lg-block"><img src="/assets/icons/fi-rr-user.png" alt=""></button>
       <button type="button" class="cart header-icons-hight d-none d-lg-block"><img src="/assets/icons/fi-rr-shopping-cart.png" alt=""></button>
       <div class="search-box md-search-box header-icons-hight d-flex d-lg-none">
-        <input class="search" type="search" placeholder="Search">
-        <img src="/assets/icons/fi-br-search.png" alt="search-icon">
+        <form class="d-flex" action="/search" method="get" role="search" id="">
+          <input class="search-input" type="search" placeholder="Search">
+          <button class="border border-0 bg-transparent" type="submit"><img src="/assets/icons/fi-br-search.png" alt="search-icon"></button>
+        </form> 
       </div>
       <button type="button" class="cart header-icons-hight d-block d-lg-none" id="hamburger-menu-btn"><img src="/assets/icons/fi-rr-menu-burger.svg" alt=""></button>
     </div>
-
     <!-- Desktop catalog popup start -->
     <section class="popup inner-screen mx-auto d-flex flex-column gap-5 d-none">
       <div class="top-section d-flex justify-content-between align-items-center">
@@ -235,7 +238,7 @@
           <p><a href="">Wallets</a></p>
         </div>
       </div>
-      <div class="bottom-section d-flex justify-content-center gap-5 d-none" id="women">
+      <div class="bottom-section d-flex justify-content-left gap-5 d-none" id="women">
         <div class="first-col d-flex flex-column">
           <div class="d-flex flex-column">
             <p><a href="">Tops</a></p>
@@ -255,7 +258,7 @@
           <p><a href="">Swimwear</a></p>
         </div>
       </div>
-      <div class="bottom-section d-flex justify-content-center gap-5 d-none" id="bags-and-packs">
+      <div class="bottom-section d-flex justify-content-left gap-5 d-none" id="bags-and-packs">
         <div class="first-col d-flex flex-column">
           <div class="d-flex flex-column">
             <a href="#">Messenger bags</a>
@@ -275,7 +278,7 @@
           </div>
         </div>
       </div>
-      <div class="bottom-section d-flex justify-content-center gap-5 d-none" id="camping-and-survival">
+      <div class="bottom-section d-flex justify-content-left gap-5 d-none" id="camping-and-survival">
         <div class="first-col d-flex flex-column">
           <div class="d-flex flex-column">
             <p><a href="">Survival Gear</a></p>
@@ -799,46 +802,46 @@
             <ul class="outerList">
               <li class="category-list"><img src="./assets/icons/listing/chevron-down.svg" alt="rectangle">Balack Guns(30)
                 <ul class="d-none" id="balackGuns">
-                  <li>Blank Guns(13)</li>
-                  <li>Blank Gun Magazine(17)</li>
+                  <li><a href="#">Blank Guns(13)</a></li>
+                  <li><a href="#">Blank Gun Magazine(17)</a></li>
                 </ul>
               </li>
               <li class="category-list"><img src="./assets/icons/listing/chevron-down.svg" alt="rectangle">BB Guns(160)
                 <ul class="d-none" id="bbGuns">
-                  <li>BB Pistols(30)</li>
-                  <li>BB SMGs(45)</li>
-                  <li>BB Rifies(45)</li>
-                  <li>BB Magazine(40)</li>
+                  <li><a href="#">BB Pistols(30)</a></li>
+                  <li><a href="#">BB SMGs(45)</a></li>
+                  <li><a href="#">BB Rifies(45)</a></li>
+                  <li><a href="#">BB Magazine(40)</a></li>
                 </ul>
               </li>
               <li class="category-list"><img src="./assets/icons/listing/chevron-down.svg" alt="rectangle">Pellet Guns(90)
                 <ul class="d-none" id="pellet">
-                  <li>Pellet Pistols(40)</li>
-                  <li>Pellet Rifies(20)</li>
-                  <li>Pellet Magazines(30)</li>
+                  <li><a href="#">Pellet Pistols(40)</a></li>
+                  <li><a href="#">Pellet Rifies(20)</a></li>
+                  <li><a href="#">Pellet Magazines(30)</a></li>
                 </ul>
               </li>
               <li class="category-list"><img src="./assets/icons/listing/chevron-down.svg" alt="rectangle">Airsoft Guns(320)
                 <ul class="d-none" id="airsoft">
-                  <li>Airsoft Pistols(25)</li>
-                  <li>Airsoft SMGs(20)</li>
-                  <li>Airsoft Rifies(30)</li>
-                  <li>Airsoft Magazinos(30)</li>
-                  <li>Airsoft Batteries & Chargors(40)</li>
-                  <li>Airsoft Masks(45)</li>
-                  <li>Airsoft Launchers(25)</li>
-                  <li>Airsoft Internal Parts(30)</li>
-                  <li>Airsoft External Parts(75)</li>
+                  <li><a href="#">Airsoft Pistols(25)</a></li>
+                  <li><a href="#">Airsoft SMGs(20)</a></li>
+                  <li><a href="#">Airsoft Rifies(30)</a></li>
+                  <li><a href="#">Airsoft Magazinos(30)</a></li>
+                  <li><a href="#">Airsoft Batteries & Chargors(40)</a></li>
+                  <li><a href="#">Airsoft Masks(45)</a></li>
+                  <li><a href="#">Airsoft Launchers(25)</a></li>
+                  <li><a href="#">Airsoft Internal Parts(30)</a></li>
+                  <li><a href="#">Airsoft External Parts(75)</a></li>
                 </ul>
               </li>
               <li class="category-list"><img src="./assets/icons/listing/chevron-down.svg" alt="rectangle">Ammo $ Gas(160)
                 <ul class="d-none" id="ammo">
-                  <li>Pellets(25)</li>
-                  <li>Steel BBs(25)</li>
-                  <li>Airsoft Ammo(30)</li>
-                  <li>Speed Loaders(40)</li>
-                  <li>Co2 Cartridges(20)</li>
-                  <li>Green Gas(20)</li>
+                  <li><a href="#">Pellets(25)</a></li>
+                  <li><a href="#">Steel BBs(25)</a></li>
+                  <li><a href="#">Airsoft Ammo(30)</a></li>
+                  <li><a href="#">Speed Loaders(40)</a></li>
+                  <li><a href="#">Co2 Cartridges(20)</a></li>
+                  <li><a href="#">Green Gas(20)</a></li>
                 </ul>
               </li>
             </ul>
@@ -924,7 +927,7 @@
           <button class="clear-filter-btn header-icons-hight" type="button">Clear filters</button>
         </div>
       </div>
-      <div class="filtered-cards d-flex justify-content-start flex-wrap gap-1">
+      <div class="filtered-cards d-flex flex-wrap justify-content-center ">
           <div class="card p-3 rounded-4">
             <span class="discount d-flex">
               <img height="15px" src="./assets/icons/Vector.png" alt="discount-icon">
@@ -1209,7 +1212,10 @@
         </div>
         <div class="signup-section">
           <p class="signup-text">Sign up for the newsletter</p>
-          <input class="p-2 rounded-4" type="text" placeholder="Enter our email">
+          <form class="subscribe-form d-flex p-1" action="" method="" role="">
+            <input class="p-2" type="text" placeholder="Enter your email">
+            <button class="p-2" type="submit">Subscribe</button>
+          </form>
         </div>
       </div>
     </div>

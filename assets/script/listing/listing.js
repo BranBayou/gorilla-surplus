@@ -18,17 +18,62 @@ showLessIntro.addEventListener('click', () => {
 
 const filterBtn = document.querySelector('.filter-btn');
 const filterSection = document.querySelector('.filter-section');
+const filterdCards = document.querySelector('.filtered-cards');
 
-// const filterdCards = document.querySelector('.filtered-cards');
+let isFilterApplied = filterSection.classList.contains('d-none') === false;
 
 filterBtn.addEventListener('click', () => {
   filterSection.classList.toggle('d-none');
   filterBtn.innerHTML = filterBtn.innerHTML === 'Open Filter' ? 'Clear Filter' : 'Open Filter';
+  isFilterApplied = !isFilterApplied;
+  toggleFilterSection();
 });
+
+
 const clearFilterBtn = document.querySelector('.clear-filter-btn');
 clearFilterBtn.addEventListener('click', () => {
   filterSection.classList.toggle('d-none');
+  filterBtn.innerHTML = filterBtn.innerHTML === 'Open Filter' ? 'Clear Filter' : 'Open Filter';
+  isFilterApplied = !isFilterApplied;
+  toggleFilterSection();
+  
 });
+
+const toggleFilterSection = () => {
+  if (window.matchMedia("(min-width: 992px)").matches) {
+    let styleElement = document.getElementById('dynamicStyle');
+
+    if (!styleElement) {
+      styleElement = document.createElement('style');
+      styleElement.id = 'dynamicStyle';
+      document.head.appendChild(styleElement);
+    }
+
+    styleElement.innerHTML = isFilterApplied
+      ? `
+        @media screen and (min-width: 992px) {
+          .filtered-cards .card {
+            flex: 1 0 calc(33.333% - 10px);
+            min-width: 0; 
+            max-width: calc(33.333% - 10px); 
+            padding: 10px;
+            margin: 3px 2px;
+          }
+        }
+      `
+      : `
+        @media screen and (min-width: 992px) {
+          .filtered-cards .card {
+            flex: 1 0 calc(25% - 10px);
+            min-width: 0; 
+            max-width: calc(25% - 10px); 
+            padding: 10px;
+            margin: 3px 2px;
+          }
+        }
+      `;
+  }
+};
 
 /* Handle view more cards */
 
