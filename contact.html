@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="./assets/pages/home/home.css">
   <link rel="stylesheet" href="./assets/pages/home/popup.css">
   <link rel="stylesheet" href="./assets/pages/home/mobile-menu.css">
-  <link rel="stylesheet" href="./assets/pages/about/about.css">
+  <link rel="stylesheet" href="./assets/pages/contact/contact.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body class="">
@@ -773,31 +773,48 @@
   </header>
   <!-- Header end here -->
 
-  <!-- About main section start here -->
-  <main class="about-main-section inner-screen mx-auto">
-    <div class="position-relative about-section-top">
-      <img class="mt-2" src="./assets/img/about/Group 48097776.png" alt="about image">
-      <div class="about-path-con d-flex align-items-center gap-2">
-        <a href="#">Home  ></a>
-        <a href="#">About us</a>
+  <!-- Contact main section start here -->
+  <main class="contact-main-section inner-screen mx-auto">
+    <div class="contact-section-top d-flex flex-column flex-md-row mt-2">
+      <div class="position-relative contact-top-left">
+        <img class="contact-image-main" src="./assets/img/contact/Rectangle 1602.png" alt="contact-image">
+        <div class="contact-path-con d-flex align-items-center gap-2">
+          <a href="#">Home  ></a>
+          <a href="#">Contact</a>
+        </div>
+        <p class="contact-text">Contact</p>
+        <div class="contact-social-links">
+          <a href="#"><img class="social-link-contact" src="./assets/icons/contact/Frame 48097775.png" alt="Instagram"></a>
+          <a href="#"><img class="social-link-contact" src="./assets/icons/contact/Frame 48097776.png" alt="Facebook"></a>
+          <a href="#"><img class="social-link-contact" src="./assets/icons/contact/Frame 48097777.png" alt="YouTube"></a>
+        </div>
       </div>
-      <p class="about-us-text">About us</p>
+      <div class="contact-top-right">
+        <form action="" method="post" role="">
+          <div class="d-flex flex-column">
+            <label for="email">Email address</label>
+            <input type="email" name="email" id="email" placeholder="Email">
+          </div>
+          <div class="d-flex flex-column">
+            <label for="text">Your text</label>
+            <textarea name="text" id="text" cols="30" rows="10" placeholder="Text"></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </div>
     </div>
-    <div class="about-section-bottom d-flex flex-column flex-md-row my-5">
-      <div class="about-bottom-left">
-        <p>Gorilla Military Surplus Canada is your one-stop shop for all your military gear and apparel needs. We offer a wide variety of products at the best prices.</p>
-        <img src="./assets/img/about/Rectangle 1601.png" alt="image about us">
+    <div class="contact-section-bottom d-flex flex-column flex-md-row justify-content-between py-5">
+      <div class="contact-bottom-left">
+        <h1 class="location-text">Location</h1>
+        <address class="">1458 East Broadway St. Vancouver, BC V5N 1V6 Canada</address>
+        <a href="#">Pave the way </a>
       </div>
-      <div class="about-bottom-right">
-        <p>Gorilla Military Surplus Canada is your trusted military gear and apparel store. We offer a wide variety of products for men, women and children, including clothing, footwear, accessories, camping gear, knives and multi-tools, BB guns and air rifles, workwear, baby clothes, law enforcement gear, backpacks and bags, dog tags, patches and insignia, climbing gear and much more.</p>
-        <p>We have been in business for over 50 years and are located in the heart of Vancouver, on Broadway. We have over 3000 square feet of space jam-packed with military gear and outerwear. We are within walking distance of the Broadway/Commercial Drive Skytrain station. You won't miss the Gorilla Military Surplus store - you'll see a giant gorilla outside!</p>
-        <p>We offer the best selection of military gear from around the world and thousands of other products! Visit our East Vancouver store today or browse our website to find the best brands at the lowest prices.</p>
-        <p>If you have any questions about ordering online or purchasing in-store, please do not hesitate to contact us for more information.</p>
-        <p>Thank You for coming along the ride with us! </p>
+      <div class="contact-bottom-right">
+        <img src="./assets/img/contact/Rectangle 1611.png" alt="location-img">
       </div>
     </div>
   </main>
-  <!-- About main section end here -->
+  <!-- Contact main section end here -->
 
   <!-- Footer start -->
   <footer class="inner-screen mx-auto d-flex flex-column align-items-center justify-content-between rounded-4 p-4 mb-4">
