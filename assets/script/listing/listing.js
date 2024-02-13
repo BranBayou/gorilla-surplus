@@ -78,13 +78,41 @@ const toggleFilterSection = () => {
 /* Handle view more cards */
 
 const viewMoreCardsBtn = document.querySelector('.view-more-cards-btn');
-const moreProducts = document.querySelectorAll('.when-more');
+// const moreProducts = document.querySelectorAll('.when-more');
+const viewLessCardsBtn = document.querySelector('.show-less-cards-btn');
+const filteredCards = document.querySelector('.filtered-cards');
 
 viewMoreCardsBtn.addEventListener('click', () => {
-  moreProducts.forEach(product => {
-    product.classList.remove('d-none');
+  const cards = document.querySelectorAll('.card');
+  cards.forEach(card => {
+    card.classList.remove('d-none');
+    viewLessCardsBtn.classList.remove('d-none');
+    viewMoreCardsBtn.classList.add('d-none');
   })
 });
+
+viewLessCardsBtn.addEventListener('click', () => {
+  const cards = filteredCards.children;
+  if (cards.length >= 8) {
+    for (let i = 8; i < cards.length; i++) {
+      cards[i].classList.add('d-none');
+    }
+  }
+  viewMoreCardsBtn.classList.remove('d-none');
+  viewLessCardsBtn.classList.add('d-none');
+  filteredCards.parentElement.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start',
+  });
+});
+
+// viewMoreCardsBtn.addEventListener('click', () => {
+//   moreProducts.forEach(product => {
+//     product.classList.remove('d-none');
+//   })
+// });
+
+
 
 /* Handle filter buttons for all conditions */
 

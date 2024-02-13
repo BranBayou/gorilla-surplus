@@ -66,14 +66,14 @@
 .contact-top-right input[type="email"] {
   padding: 27px 67px 27px 30px;
   border-radius: 10px;
-  border: 2px;
+  border: 2px solid #383634;
   gap: 10px;
 }
 
 textarea {
   padding: 27px 67px 27px 30px;
   border-radius: 10px;
-  border: 2px;
+  border: 2px solid #383634;
   gap: 10px;
 } 
 
