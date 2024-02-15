@@ -64,6 +64,14 @@
   color: #383634;
 }
 
+.depth1 {
+  padding: 0 20px;
+}
+
+.depth2 {
+  padding: 0 40px;
+}
+
 .outerList li img {
   width: 20px;
   transform: rotate(45deg);
@@ -124,8 +132,8 @@ p:nth-child(8) {
 @media screen and (min-width: 1200px) {
   .filtered-cards .card{
     flex: 1 0 calc(25% - 10px);
-    min-width: 0; 
-    max-width: calc(25% - 10px); 
+    min-width: 24.7;
+    /* max-width: calc(25% - 10px);  */
     padding: 10px;
     margin: 3px 2px;
   }
@@ -136,7 +144,7 @@ p:nth-child(8) {
   .filtered-cards .card{
     flex: 1 0 calc(33.333% - 10px);
     min-width: 0; 
-    max-width: calc(33.333% - 10px); 
+    /* max-width: calc(33.333% - 10px);  */
     padding: 10px;
     margin: 3px 2px;
   }

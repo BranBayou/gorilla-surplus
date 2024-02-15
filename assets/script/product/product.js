@@ -1,3 +1,21 @@
+/* Handle slider */
+const mainImageDisplayed = document.querySelector('.main-img-display');
+const mainImages = document.querySelectorAll('.main-image');
+const productOptions = document.querySelectorAll('.product-options');
+
+productOptions.forEach((productOption, index) => {
+  productOption.addEventListener('click', () => {
+    mainImages.forEach(image => {
+      image.classList.add('d-none');
+    });
+    productOptions.forEach(option => {
+      option.classList.remove('selected-thumbnail');
+    });
+    mainImages[index].classList.remove('d-none');
+    productOption.classList.add('selected-thumbnail');
+  });
+});
+
 const moreDetailBtn = document.getElementById('details-link-btn');
 const specializationsBtn = document.getElementById('specializations-link-btn');
 const addToBtn = document.getElementById('addto-link-btn');

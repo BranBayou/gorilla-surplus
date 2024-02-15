@@ -785,7 +785,7 @@
           <label for="email">Email address</label>
           <input type="email" name="email" id="email" placeholder="Email">
         </div>
-        <button type="submit">Confirm</button>
+        <button class="confirm" type="submit">Confirm</button>
         <div class="link-to-login d-flex gap-2">
           <p>Check your email in a few seconds.</p>
         </div>
@@ -867,4 +867,21 @@
 </body>
 <script type="module" src="./assets/script/home/popup.js"></script>
 <script type="module" src="./assets/script/home/mobileMenu.js"></script>
+<script>
+  const resetPopup = document.querySelector('.reset-popup');
+  const resetDiv = document.querySelector('.confirm');
+  const resetOverlay = document.querySelector('.reset-overlay');
+  const closeResetBtn = document.querySelector('.close-reset-popup-btn');
+
+  resetDiv.addEventListener('click', (e) => {
+    e.preventDefault();
+    resetOverlay.classList.remove('d-none');
+    resetPopup.classList.remove('d-none');
+  })
+
+  closeResetBtn.addEventListener('click', (e) => {
+    resetOverlay.classList.add('d-none');
+    resetPopup.classList.add('d-none');
+  })
+</script>
 </html>

@@ -19,6 +19,7 @@ showLessIntro.addEventListener('click', () => {
 const filterBtn = document.querySelector('.filter-btn');
 const filterSection = document.querySelector('.filter-section');
 const filterdCards = document.querySelector('.filtered-cards');
+var directChildren = filterdCards.children;
 
 let isFilterApplied = filterSection.classList.contains('d-none') === false;
 
@@ -49,7 +50,8 @@ const toggleFilterSection = () => {
       document.head.appendChild(styleElement);
     }
 
-    styleElement.innerHTML = isFilterApplied
+    if (directChildren.length > 3){
+      styleElement.innerHTML = isFilterApplied
       ? `
         @media screen and (min-width: 992px) {
           .filtered-cards .card {
@@ -72,6 +74,32 @@ const toggleFilterSection = () => {
           }
         }
       `;
+    }
+    else {
+      styleElement.innerHTML = isFilterApplied
+      ? `
+        @media screen and (min-width: 992px) {
+          .filtered-cards .card {
+            flex: 1 0 calc(33.333% - 10px);
+            min-width: 0; 
+            // max-width: calc(33.333% - 10px); 
+            padding: 10px;
+            margin: 3px 2px;
+          }
+        }
+      `
+      : `
+        @media screen and (min-width: 992px) {
+          .filtered-cards .card {
+            flex: 1 0 calc(25% - 10px);
+            min-width: 0; 
+            // max-width: calc(25% - 10px); 
+            padding: 10px;
+            margin: 3px 2px;
+          }
+        }
+      `;
+    }
   }
 };
 

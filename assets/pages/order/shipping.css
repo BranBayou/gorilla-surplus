@@ -1,0 +1,141 @@
+.shipping-main-section {
+  width: 35.7%;
+  padding: 50px 0;
+}
+
+.shipping-section-top .shipping-text {
+  font-family: Oswald;
+  font-size: 54px;
+  font-weight: 500;
+  line-height: 59px;
+}
+
+.shipping-section-bottom  label,
+.shipping-section-top label {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  margin: 10px 0;
+}
+
+.shipping-section-bottom input,
+.shipping-section-top input {
+  padding: 27px 67px 27px 30px;
+  border-radius: 10px;
+  border: 2px solid #383634;
+  gap: 10px;
+}
+
+.shipping-section-bottom  button,
+.shipping-section-top button {
+  width: 100%;
+  color: #F2F0EA;
+  background-color: #383634;
+  padding: 27px 67px 27px 67px;
+  border-radius: 10px;
+  border: 1px;
+  gap: 10px;
+}
+
+.shipping-section-top a {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 17px;
+  text-decoration: none;
+  color: #383634;
+  margin: 15px 0;
+}
+
+/* Middle section */
+
+.shipping-section-middle .shipping-text {
+  font-family: Oswald;
+  font-size: 54px;
+  font-weight: 500;
+  line-height: 59px;
+}
+
+.shipping-section-middle label {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  margin: 10px 0;
+}
+
+.shipping-section-middle input {
+  padding: 27px 67px 27px 30px;
+  border-radius: 10px;
+  border: 2px solid #383634;
+  gap: 10px;
+}
+
+.shipping-section-middle button {
+  width: 100%;
+  color: #F2F0EA;
+  background-color: #383634;
+  padding: 27px 67px 27px 67px;
+  border-radius: 10px;
+  border: 1px;
+  gap: 10px;
+}
+
+.shipping-section-middle  .name-div input {
+  width: 100%;
+}
+
+.shipping-section-middle  .address-div input {
+  width: 100%;
+}
+
+.apartment-div input {
+  width: 100%;
+}
+
+.shipping-section-middle .state-div input {
+  width: 100%;
+}
+
+.contry-div select {
+  padding: 27px 67px 27px 67px;
+}
+
+
+.shipping-section-bottom img {
+  width: 70px;
+}
+
+.card-number,
+.card-name {
+  width: 80%;
+}
+
+.card-expiration,
+.cvv {
+  width: 20%;
+}
+
+.terms-and-conditions {
+  height: 80px;
+}
+
+.shipping-section-bottom input[type="radio"] {
+  width: 25px;
+  height: 25px;
+}
+
+.terms-checkbox {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #383634;
+}
+
+/* .shipping-section-bottom p {
+
+} */
+
+/* .term-text {
+  padding-top: 10px;
+} */
